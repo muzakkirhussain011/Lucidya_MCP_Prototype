@@ -1,0 +1,30 @@
+[
+  {
+    "id": "4764efdd-d9c4-4bda-8b35-9849d3c6a80e",
+    "name": "VP Customer Experience at Acme Corporation",
+    "email": "vp.customer.experien@acme.com",
+    "title": "VP Customer Experience",
+    "prospect_id": "acme"
+  },
+  {
+    "id": "d20fc414-e919-4490-a6f1-eac988dfdc50",
+    "name": "Chief Customer Officer at TechCorp Industries",
+    "email": "chief.customer.ficer@techcorp.io",
+    "title": "Chief Customer Officer",
+    "prospect_id": "techcorp"
+  },
+  {
+    "id": "080d1788-2322-4a4e-8ab9-a332a4003b7a",
+    "name": "SVP Customer Success at TechCorp Industries",
+    "email": "svp.customer.success@techcorp.io",
+    "title": "SVP Customer Success",
+    "prospect_id": "techcorp"
+  },
+  {
+    "id": "de8df07b-2285-4fa2-b0d9-ab355a242e6c",
+    "name": "VP CX Analytics at TechCorp Industries",
+    "email": "vp.cx.analytics@techcorp.io",
+    "title": "VP CX Analytics",
+    "prospect_id": "techcorp"
+  }
+]

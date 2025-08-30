@@ -2,6 +2,7 @@
 import asyncio
 import aiohttp
 from typing import Dict, Any
+from fastapi.encoders import jsonable_encoder
 from app.config import (
     MCP_SEARCH_PORT, MCP_EMAIL_PORT, 
     MCP_CALENDAR_PORT, MCP_STORE_PORT
@@ -28,10 +29,13 @@ class MCPClient:
         """Call MCP method"""
         if not self.session:
             await self.connect()
-        
+        # Ensure payload is JSON-serializable (handles datetimes and Pydantic models)
+        payload = {"method": method, "params": params or {}}
+        safe_payload = jsonable_encoder(payload)
+
         async with self.session.post(
             f"{self.base_url}/rpc",
-            json={"method": method, "params": params or {}}
+            json=safe_payload
         ) as response:
             result = await response.json()
             return result.get("result")

@@ -4,6 +4,7 @@ from datetime import datetime
 from typing import AsyncGenerator
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import StreamingResponse, JSONResponse
+from fastapi.encoders import jsonable_encoder
 from app.schema import PipelineRequest, WriterStreamRequest, Prospect, HandoffPacket
 from app.orchestrator import Orchestrator
 from app.config import OLLAMA_BASE_URL, MODEL_NAME
@@ -59,7 +60,8 @@ async def health():
 async def stream_pipeline(request: PipelineRequest) -> AsyncGenerator[bytes, None]:
     """Stream NDJSON events from pipeline"""
     async for event in orchestrator.run_pipeline(request.company_ids):
-        yield (json.dumps(event) + "\n").encode()
+        # Ensure nested Pydantic models (e.g., Prospect) are JSON-serializable
+        yield (json.dumps(jsonable_encoder(event)) + "\n").encode()
 
 @app.post("/run")
 async def run_pipeline(request: PipelineRequest):
@@ -93,7 +95,8 @@ async def stream_writer_test(company_id: str) -> AsyncGenerator[bytes, None]:
     
     writer = Writer(mcp)
     async for event in writer.run_streaming(prospect):
-        yield (json.dumps(event) + "\n").encode()
+        # Ensure nested Pydantic models (e.g., Prospect) are JSON-serializable
+        yield (json.dumps(jsonable_encoder(event)) + "\n").encode()
 
 @app.post("/writer/stream")
 async def writer_stream_test(request: WriterStreamRequest):

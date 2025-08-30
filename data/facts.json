@@ -1,0 +1,272 @@
+[
+  {
+    "id": "383e90b4-d7ac-472a-ba27-35d21df8d9a6",
+    "source": "Industry Report 2024",
+    "text": "Found that Acme Corporation customer experience is a critical priority for modern businesses",
+    "collected_at": "2025-08-30T20:44:28.918125",
+    "ttl_hours": 168,
+    "confidence": 0.85,
+    "company_id": "acme"
+  },
+  {
+    "id": "aed0a9c2-703d-444f-8955-e3af628136d9",
+    "source": "CX Weekly",
+    "text": "Best practices for Acme Corporation customer experience include automation and personalization",
+    "collected_at": "2025-08-30T20:44:28.921124",
+    "ttl_hours": 168,
+    "confidence": 0.75,
+    "company_id": "acme"
+  },
+  {
+    "id": "d08ea750-2549-40c5-914a-a39ff4232d1c",
+    "source": "Industry Report 2024",
+    "text": "Found that Acme Corporation SaaS challenges is a critical priority for modern businesses",
+    "collected_at": "2025-08-30T20:44:28.926071",
+    "ttl_hours": 168,
+    "confidence": 0.85,
+    "company_id": "acme"
+  },
+  {
+    "id": "43609112-5ccb-484b-8575-23c5c18eef6a",
+    "source": "CX Weekly",
+    "text": "Best practices for Acme Corporation SaaS challenges include automation and personalization",
+    "collected_at": "2025-08-30T20:44:28.930129",
+    "ttl_hours": 168,
+    "confidence": 0.75,
+    "company_id": "acme"
+  },
+  {
+    "id": "3119b432-6120-4a21-8f3a-97082b9cdd56",
+    "source": "Industry Report 2024",
+    "text": "Found that acme.com support contact is a critical priority for modern businesses",
+    "collected_at": "2025-08-30T20:44:28.934133",
+    "ttl_hours": 168,
+    "confidence": 0.85,
+    "company_id": "acme"
+  },
+  {
+    "id": "93cebb25-5c3b-478b-ad9a-9de3d24c1121",
+    "source": "CX Weekly",
+    "text": "Best practices for acme.com support contact include automation and personalization",
+    "collected_at": "2025-08-30T20:44:28.936130",
+    "ttl_hours": 168,
+    "confidence": 0.75,
+    "company_id": "acme"
+  },
+  {
+    "id": "9beed1db-7356-442b-a056-8bfefb4ba646",
+    "source": "seed_data",
+    "text": "Known pain point: Low NPS scores in enterprise segment",
+    "collected_at": "2025-08-30T20:44:28.939134",
+    "ttl_hours": 336,
+    "confidence": 0.9,
+    "company_id": "acme"
+  },
+  {
+    "id": "b3318264-6f97-4a79-87a1-c70a342bd97d",
+    "source": "seed_data",
+    "text": "Known pain point: Customer churn increasing 15% YoY",
+    "collected_at": "2025-08-30T20:44:28.943129",
+    "ttl_hours": 336,
+    "confidence": 0.9,
+    "company_id": "acme"
+  },
+  {
+    "id": "5857da33-252b-4a99-8324-8d91246ad808",
+    "source": "seed_data",
+    "text": "Known pain point: Support ticket volume overwhelming team",
+    "collected_at": "2025-08-30T20:44:28.946134",
+    "ttl_hours": 336,
+    "confidence": 0.9,
+    "company_id": "acme"
+  },
+  {
+    "id": "ecd497b2-0f98-4cbd-a34b-af7232e21f98",
+    "source": "seed_data",
+    "text": "Known pain point: No unified view of customer journey",
+    "collected_at": "2025-08-30T20:44:28.950135",
+    "ttl_hours": 336,
+    "confidence": 0.9,
+    "company_id": "acme"
+  },
+  {
+    "id": "3e3f345a-877c-4518-9195-0463f7139a0b",
+    "source": "Industry Report 2024",
+    "text": "Found that TechCorp Industries customer experience is a critical priority for modern businesses",
+    "collected_at": "2025-08-30T20:45:09.500973",
+    "ttl_hours": 168,
+    "confidence": 0.85,
+    "company_id": "techcorp"
+  },
+  {
+    "id": "c02e40b8-9b4a-4eb4-9b82-b7441fc555f2",
+    "source": "CX Weekly",
+    "text": "Best practices for TechCorp Industries customer experience include automation and personalization",
+    "collected_at": "2025-08-30T20:45:09.505341",
+    "ttl_hours": 168,
+    "confidence": 0.75,
+    "company_id": "techcorp"
+  },
+  {
+    "id": "dde5cde5-6192-4149-9838-949ca171bee9",
+    "source": "Industry Report 2024",
+    "text": "Found that TechCorp Industries FinTech challenges is a critical priority for modern businesses",
+    "collected_at": "2025-08-30T20:45:09.512344",
+    "ttl_hours": 168,
+    "confidence": 0.85,
+    "company_id": "techcorp"
+  },
+  {
+    "id": "9b6cc91c-aa44-40df-9c15-5a830a07a157",
+    "source": "CX Weekly",
+    "text": "Best practices for TechCorp Industries FinTech challenges include automation and personalization",
+    "collected_at": "2025-08-30T20:45:09.517807",
+    "ttl_hours": 168,
+    "confidence": 0.75,
+    "company_id": "techcorp"
+  },
+  {
+    "id": "15188908-a7ef-4f3b-92c0-d66d91288c42",
+    "source": "Industry Report 2024",
+    "text": "Found that techcorp.io support contact is a critical priority for modern businesses",
+    "collected_at": "2025-08-30T20:45:09.523039",
+    "ttl_hours": 168,
+    "confidence": 0.85,
+    "company_id": "techcorp"
+  },
+  {
+    "id": "5f5342f7-4323-4181-99d9-20952940063a",
+    "source": "CX Weekly",
+    "text": "Best practices for techcorp.io support contact include automation and personalization",
+    "collected_at": "2025-08-30T20:45:09.528039",
+    "ttl_hours": 168,
+    "confidence": 0.75,
+    "company_id": "techcorp"
+  },
+  {
+    "id": "15969469-b1df-4359-9b72-99ca62094a2f",
+    "source": "seed_data",
+    "text": "Known pain point: Regulatory compliance for customer communications",
+    "collected_at": "2025-08-30T20:45:09.532269",
+    "ttl_hours": 336,
+    "confidence": 0.9,
+    "company_id": "techcorp"
+  },
+  {
+    "id": "0c7307ee-6ab4-48a9-9b3d-de7cefe6c625",
+    "source": "seed_data",
+    "text": "Known pain point: Multi-channel support inconsistency",
+    "collected_at": "2025-08-30T20:45:09.538269",
+    "ttl_hours": 336,
+    "confidence": 0.9,
+    "company_id": "techcorp"
+  },
+  {
+    "id": "dee63c54-9b60-4eea-b36a-2759238fb301",
+    "source": "seed_data",
+    "text": "Known pain point: Customer onboarding takes too long",
+    "collected_at": "2025-08-30T20:45:09.543274",
+    "ttl_hours": 336,
+    "confidence": 0.9,
+    "company_id": "techcorp"
+  },
+  {
+    "id": "552962b0-1569-4814-b1b1-9a75dbb37bc6",
+    "source": "seed_data",
+    "text": "Known pain point: Poor personalization in customer interactions",
+    "collected_at": "2025-08-30T20:45:09.548269",
+    "ttl_hours": 336,
+    "confidence": 0.9,
+    "company_id": "techcorp"
+  },
+  {
+    "id": "9c0b4fb3-356f-4b13-865d-1c6e15e58e0c",
+    "source": "Industry Report 2024",
+    "text": "Found that RetailPlus customer experience is a critical priority for modern businesses",
+    "collected_at": "2025-08-30T20:45:56.089962",
+    "ttl_hours": 168,
+    "confidence": 0.85,
+    "company_id": "retailplus"
+  },
+  {
+    "id": "1da7ab76-0c85-44de-8a29-0bd03b64b38d",
+    "source": "CX Weekly",
+    "text": "Best practices for RetailPlus customer experience include automation and personalization",
+    "collected_at": "2025-08-30T20:45:56.094956",
+    "ttl_hours": 168,
+    "confidence": 0.75,
+    "company_id": "retailplus"
+  },
+  {
+    "id": "1022b50c-2fa4-48b7-9385-410421e30e78",
+    "source": "Industry Report 2024",
+    "text": "Found that RetailPlus E-commerce challenges is a critical priority for modern businesses",
+    "collected_at": "2025-08-30T20:45:56.104621",
+    "ttl_hours": 168,
+    "confidence": 0.85,
+    "company_id": "retailplus"
+  },
+  {
+    "id": "ff81dea9-9684-41dc-9d0f-2b069e47796d",
+    "source": "CX Weekly",
+    "text": "Best practices for RetailPlus E-commerce challenges include automation and personalization",
+    "collected_at": "2025-08-30T20:45:56.110621",
+    "ttl_hours": 168,
+    "confidence": 0.75,
+    "company_id": "retailplus"
+  },
+  {
+    "id": "bfdc5f98-a2cc-4950-8f5d-a0efc53b37fb",
+    "source": "Industry Report 2024",
+    "text": "Found that retailplus.com support contact is a critical priority for modern businesses",
+    "collected_at": "2025-08-30T20:45:56.119118",
+    "ttl_hours": 168,
+    "confidence": 0.85,
+    "company_id": "retailplus"
+  },
+  {
+    "id": "d3886eb3-7c01-4e39-968f-942119882567",
+    "source": "CX Weekly",
+    "text": "Best practices for retailplus.com support contact include automation and personalization",
+    "collected_at": "2025-08-30T20:45:56.125114",
+    "ttl_hours": 168,
+    "confidence": 0.75,
+    "company_id": "retailplus"
+  },
+  {
+    "id": "b2c28dbc-14fd-474d-bfba-796f7f41395b",
+    "source": "seed_data",
+    "text": "Known pain point: Seasonal support spikes unmanageable",
+    "collected_at": "2025-08-30T20:45:56.129114",
+    "ttl_hours": 336,
+    "confidence": 0.9,
+    "company_id": "retailplus"
+  },
+  {
+    "id": "6e446c0f-e298-4aa0-8c2c-33065f79943a",
+    "source": "seed_data",
+    "text": "Known pain point: Customer retention below industry average",
+    "collected_at": "2025-08-30T20:45:56.134635",
+    "ttl_hours": 336,
+    "confidence": 0.9,
+    "company_id": "retailplus"
+  },
+  {
+    "id": "7cda81fd-c329-41c5-ae76-502b87edcfe9",
+    "source": "seed_data",
+    "text": "Known pain point: No proactive customer engagement",
+    "collected_at": "2025-08-30T20:45:56.139643",
+    "ttl_hours": 336,
+    "confidence": 0.9,
+    "company_id": "retailplus"
+  },
+  {
+    "id": "a454a21a-2618-4297-9dc0-a698eaa871d8",
+    "source": "seed_data",
+    "text": "Known pain point: Reviews and feedback not actionable",
+    "collected_at": "2025-08-30T20:45:56.145636",
+    "ttl_hours": 336,
+    "confidence": 0.9,
+    "company_id": "retailplus"
+  }
+]

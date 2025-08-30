@@ -1,4 +1,3 @@
-# file: data/footer.txt
 
 ---
 Lucidya Inc.
