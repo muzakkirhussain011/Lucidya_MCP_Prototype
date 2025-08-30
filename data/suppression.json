@@ -1,0 +1,16 @@
+[
+  {
+    "id": "supp-001",
+    "type": "domain",
+    "value": "competitor.com",
+    "reason": "Competitor - do not contact",
+    "expires_at": null
+  },
+  {
+    "id": "supp-002",
+    "type": "email",
+    "value": "noreply@example.com",
+    "reason": "Bounced email",
+    "expires_at": "2024-12-31T23:59:59Z"
+  }
+]

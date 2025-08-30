@@ -1,0 +1,121 @@
+[
+  {
+    "id": "acme",
+    "company": {
+      "id": "acme",
+      "name": "Acme Corporation",
+      "domain": "acme.com",
+      "industry": "SaaS",
+      "size": 500,
+      "pains": [
+        "Low NPS scores in enterprise segment",
+        "Customer churn increasing 15% YoY",
+        "Support ticket volume overwhelming team",
+        "No unified view of customer journey"
+      ],
+      "notes": [
+        "Recently raised Series C funding",
+        "Expanding into European market",
+        "Current support stack is fragmented"
+      ]
+    },
+    "contacts": [],
+    "facts": [],
+    "fit_score": 0.0,
+    "status": "new",
+    "dropped_reason": null,
+    "summary": null,
+    "email_draft": null,
+    "thread_id": null
+  },
+  {
+    "id": "techcorp",
+    "company": {
+      "id": "techcorp",
+      "name": "TechCorp Industries",
+      "domain": "techcorp.io",
+      "industry": "FinTech",
+      "size": 1200,
+      "pains": [
+        "Regulatory compliance for customer communications",
+        "Multi-channel support inconsistency",
+        "Customer onboarding takes too long",
+        "Poor personalization in customer interactions"
+      ],
+      "notes": [
+        "IPO planned for next year",
+        "Heavy investment in AI initiatives",
+        "Customer base growing 40% annually"
+      ]
+    },
+    "contacts": [],
+    "facts": [],
+    "fit_score": 0.0,
+    "status": "new",
+    "dropped_reason": null,
+    "summary": null,
+    "email_draft": null,
+    "thread_id": null
+  },
+  {
+    "id": "retailplus",
+    "company": {
+      "id": "retailplus",
+      "name": "RetailPlus",
+      "domain": "retailplus.com",
+      "industry": "E-commerce",
+      "size": 300,
+      "pains": [
+        "Seasonal support spikes unmanageable",
+        "Customer retention below industry average",
+        "No proactive customer engagement",
+        "Reviews and feedback not actionable"
+      ],
+      "notes": [
+        "Omnichannel retail strategy",
+        "Looking to improve post-purchase experience",
+        "Current NPS score is 42"
+      ]
+    },
+    "contacts": [],
+    "facts": [],
+    "fit_score": 0.0,
+    "status": "new",
+    "dropped_reason": null,
+    "summary": null,
+    "email_draft": null,
+    "thread_id": null
+  },
+  {
+    "id": "acme_test",
+    "company": {
+      "id": "acme",
+      "name": "Acme Corporation",
+      "domain": "acme.com",
+      "industry": "SaaS",
+      "size": 500,
+      "pains": [
+        "Low NPS scores in enterprise segment",
+        "Customer churn increasing 15% YoY",
+        "Support ticket volume overwhelming team",
+        "No unified view of customer journey"
+      ],
+      "notes": [
+        "Recently raised Series C funding",
+        "Expanding into European market",
+        "Current support stack is fragmented"
+      ]
+    },
+    "contacts": [],
+    "facts": [],
+    "fit_score": 0.8,
+    "status": "drafted",
+    "dropped_reason": null,
+    "summary": "<think>\nOkay, let's start by breaking down the user's query. They want a bullet-point summary of key insights for Acme Corporation's customer experience opportunities. The key points mentioned are low NPS, churn increasing by 15%, support tickets overwhelming, and a lack of unified customer journey view.\n\nFirst, I need to make sure each bullet is specific and actionable. The user specified 3-5 bullets, so I should condense the information without missing any critical points. Let me check each point again. \n\nLow NPS in the enterprise segment: That's a pain point, so maybe highlight that there's a need for better feedback mechanisms. Customer churn up 15% YoY shows that current strategies aren't keeping customers, so suggesting proactive measures could be action items. Support tickets overwhelming might require simplifying the process, so maybe suggest automation or better tracking. Unified customer journey view is a big one, so emphasizing the importance of a cohesive platform and actionable steps like integrating tools.\n\nWait, the user mentioned confidence levels as part of the facts, but the summary should be based on the insights rather than the confidence. So I need to make sure each bullet is a direct insight and actionable. Let me structure each bullet with a clear action. Also, check for any possible duplicates. For example, \"support ticket volume overwhelming\" could be rephrased to \"support requests are overwhelming\" to make it more concise. Alright, putting it all together now.\n</think>\n\n\u2022 **Low NPS scores in enterprise segment** indicate a need for improved customer feedback mechanisms to enhance engagement.  \n\u2022 **Churn rate up 15% YoY** highlights poor retention strategies, suggesting current customer service needs to be optimized.  \n\u2022 **Support ticket volume overwhelming** suggests a fragmented support stack, requiring automation or streamlined processes to improve efficiency.  \n\u2022 **Unified customer journey view** is critical to aligning customer experience across platforms, which requires integration of tools for better visibility.  \n\u2022 **Proactive measures** to address churn and support bottlenecks are necessary to sustain growth and improve operational visibility.",
+    "email_draft": {
+      "subject": "Improve Acme Corporation's Customer Experience",
+      "body": "<think>\nOkay, let's start by understanding the user's request. They need to write a personalized outreach email to the head of customer experience for Acme Corporation, focusing on their SaaS company's challenges. The key points mentioned are low NPS, 15% customer churn increase, overwhelming support tickets, and no unified customer journey view. They also want the email to be professional but friendly, 150-180 words, with a clear call-to-action, and confidence levels for each fact.\n\nFirst, the subject line should be brief and compelling. Maybe something like \"Addressing SaaS Challenges: NPS, Support, and Customer Journey\" to grab attention.\n\nNext, the body needs to be professional but friendly. Start with a greeting, mention the company's size and industry. Highlight the challenges without sounding exaggerated. Use the confidence levels to show credibility. For each pain point, make sure to integrate the confidence scores. Then, frame the call to action as a step forward, like suggesting a solution. Keep it concise, around 150-180 words. Avoid any exaggerated claims. Check that all requirements are met and the tone is appropriate.\n</think>\n\nSubject: [Subject Line] Addressing SaaS Challenges: NPS, Support, and Customer Journey  \n\nDear [Head of Customer Experience's Name],  \n\nAcme Corporation is facing growing challenges in the SaaS industry, but we\u2019re not alone in this. As a mid-sized SaaS company with 500 employees, we\u2019re navigating these obstacles: low NPS scores in our enterprise segment, a 15% YoY increase in customer churn, and a fragmented support system that\u2019s overwhelming. These challenges demand a unified approach to better support and enhance the customer experience.  \n\nWe\u2019re confident that addressing these pain points will lead to improved outcomes. By integrating unified customer journey insights and streamlining support, we can enhance NPS scores and reduce churn. Let\u2019s work together to build a more cohesive experience.  \n\n**[Call to Action]**  \n[Include a link to a solution or a meeting time.]  \n\nBest regards,  \n[Your Name]  \n[Your Position]  \nAcme Corporation  \n[Contact Information]  \n\n---  \n*Word count: 175*"
+    },
+    "thread_id": null
+  }
+]

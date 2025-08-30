@@ -1,0 +1,10 @@
+# file: data/footer.txt
+
+---
+Lucidya Inc.
+123 Market Street, Suite 400
+San Francisco, CA 94105
+United States
+
+This email was sent by Lucidya's AI-powered outreach system.
+To opt out of future communications, click here: https://lucidya.example.com/unsubscribe
