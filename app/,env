@@ -1,0 +1,6 @@
+OLLAMA_BASE_URL = "http://127.0.0.1:11434"
+OLLAMA_MODEL = "qwen3:0.6b"
+OLLAMA_EMBED_MODEL = "nomic-embed-text"
+REQUIRE_LLM = "1"
+REQUIRE_EMBEDDINGS = "1"
+ONLINE_SEARCH = "1"   # or "1" to enable DDG + HTTP fetch

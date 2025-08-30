@@ -1,0 +1,538 @@
+2025-08-30 12:55:19 | INFO | uvicorn.error | Started server process [14544]
+2025-08-30 12:55:19 | INFO | uvicorn.error | Waiting for application startup.
+2025-08-30 12:55:23 | INFO | llm | LLM ready=True latency=4.37s
+2025-08-30 12:55:24 | INFO | uvicorn.error | Startup OK | online_search=False | vector_store=memory
+2025-08-30 12:55:24 | INFO | uvicorn.error | Application startup complete.
+2025-08-30 12:55:24 | INFO | uvicorn.error | Shutting down
+2025-08-30 12:55:25 | INFO | uvicorn.error | Waiting for application shutdown.
+2025-08-30 12:55:25 | INFO | uvicorn.error | Application shutdown complete.
+2025-08-30 12:55:25 | INFO | uvicorn.error | Finished server process [14544]
+2025-08-30 12:55:30 | INFO | uvicorn.error | Started server process [25412]
+2025-08-30 12:55:30 | INFO | uvicorn.error | Waiting for application startup.
+2025-08-30 12:55:32 | INFO | llm | LLM ready=True latency=1.60s
+2025-08-30 12:55:32 | INFO | uvicorn.error | Startup OK | online_search=False | vector_store=memory
+2025-08-30 12:55:32 | INFO | uvicorn.error | Application startup complete.
+2025-08-30 12:55:47 | INFO | llm | LLM ready=True latency=1.89s
+2025-08-30 12:55:47 | INFO | uvicorn.access | 127.0.0.1:60532 - "GET /api/health HTTP/1.1" 200
+2025-08-30 12:55:49 | INFO | uvicorn.access | 127.0.0.1:60536 - "GET /api/diagnostics HTTP/1.1" 200
+2025-08-30 12:55:57 | INFO | llm | LLM ready=True latency=1.99s
+2025-08-30 12:55:57 | INFO | uvicorn.access | 127.0.0.1:60539 - "GET /api/health HTTP/1.1" 200
+2025-08-30 12:55:59 | INFO | llm | LLM ready=True latency=2.09s
+2025-08-30 12:55:59 | INFO | uvicorn.access | 127.0.0.1:60546 - "GET /api/health HTTP/1.1" 200
+2025-08-30 12:56:01 | INFO | uvicorn.access | 127.0.0.1:60550 - "GET /api/companies HTTP/1.1" 200
+2025-08-30 12:56:03 | INFO | uvicorn.access | 127.0.0.1:60552 - "GET /api/diagnostics HTTP/1.1" 200
+2025-08-30 12:56:15 | INFO | llm | LLM ready=True latency=1.96s
+2025-08-30 12:56:15 | INFO | uvicorn.access | 127.0.0.1:60556 - "GET /api/health HTTP/1.1" 200
+2025-08-30 12:56:16 | INFO | llm | LLM ready=True latency=1.91s
+2025-08-30 12:56:16 | INFO | uvicorn.access | 127.0.0.1:60558 - "GET /api/health HTTP/1.1" 200
+2025-08-30 12:56:19 | INFO | uvicorn.access | 127.0.0.1:60563 - "GET /api/stream/research/c1 HTTP/1.1" 200
+2025-08-30 12:56:19 | INFO | orchestrator | events:research:start company=stc (Saudi Telecom Company) id=c1
+2025-08-30 12:56:19 | WARNING | search | ONLINE_SEARCH=0 → offline mock for query='site:stc.com.sa customer experience'
+2025-08-30 12:56:19 | WARNING | fetch | fetch failed for https://example.invalid/mock: HTTPSConnectionPool(host='example.invalid', port=443): Max retries exceeded with url: /mock (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000206A501CB80>: Failed to resolve 'example.invalid' ([Errno 11001] getaddrinfo failed)"))
+2025-08-30 12:56:19 | WARNING | search | ONLINE_SEARCH=0 → offline mock for query='stc (Saudi Telecom Company) reviews NPS'
+2025-08-30 12:56:19 | WARNING | fetch | fetch failed for https://example.invalid/mock: HTTPSConnectionPool(host='example.invalid', port=443): Max retries exceeded with url: /mock (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000206A501C190>: Failed to resolve 'example.invalid' ([Errno 11001] getaddrinfo failed)"))
+2025-08-30 12:56:19 | WARNING | search | ONLINE_SEARCH=0 → offline mock for query='stc (Saudi Telecom Company) support channels'
+2025-08-30 12:56:19 | WARNING | fetch | fetch failed for https://example.invalid/mock: HTTPSConnectionPool(host='example.invalid', port=443): Max retries exceeded with url: /mock (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000206A501CE80>: Failed to resolve 'example.invalid' ([Errno 11001] getaddrinfo failed)"))
+2025-08-30 12:56:19 | INFO | orchestrator | enrichment: synthesize company=stc (Saudi Telecom Company) hits=0
+2025-08-30 12:56:19 | WARNING | orchestrator | enrichment: no retrieval hits for stc (Saudi Telecom Company); using metadata-only context
+2025-08-30 12:56:19 | INFO | orchestrator | enrichment: built context chars=358
+2025-08-30 12:56:25 | INFO | llm | LLM stream total_chars=550 latency=6.32s
+2025-08-30 12:56:25 | INFO | orchestrator | events:research:done company=stc (Saudi Telecom Company)
+2025-08-30 12:56:27 | INFO | uvicorn.access | 127.0.0.1:60568 - "GET /api/diagnostics HTTP/1.1" 200
+2025-08-30 13:00:24 | INFO | uvicorn.error | Shutting down
+2025-08-30 13:00:24 | INFO | uvicorn.error | Waiting for application shutdown.
+2025-08-30 13:00:24 | INFO | uvicorn.error | Application shutdown complete.
+2025-08-30 13:00:24 | INFO | uvicorn.error | Finished server process [25412]
+2025-08-30 13:07:34 | INFO | uvicorn.error | Started server process [14828]
+2025-08-30 13:07:34 | INFO | uvicorn.error | Waiting for application startup.
+2025-08-30 13:07:39 | INFO | llm | LLM ready=True latency=4.57s
+2025-08-30 13:07:40 | INFO | llm | Embeddings ready=True latency=0.84s
+2025-08-30 13:07:40 | INFO | uvicorn.error | Startup OK | online_search=True | vector_store=memory
+2025-08-30 13:07:40 | INFO | uvicorn.error | Application startup complete.
+2025-08-30 13:08:05 | INFO | uvicorn.error | Shutting down
+2025-08-30 13:08:05 | INFO | uvicorn.error | Waiting for application shutdown.
+2025-08-30 13:08:05 | INFO | uvicorn.error | Application shutdown complete.
+2025-08-30 13:08:05 | INFO | uvicorn.error | Finished server process [14828]
+2025-08-30 13:08:08 | INFO | vectorstore | vectorstore: PG not configured; using in-memory store
+2025-08-30 13:08:08 | INFO | uvicorn.error | Started server process [26752]
+2025-08-30 13:08:08 | INFO | uvicorn.error | Waiting for application startup.
+2025-08-30 13:08:10 | INFO | llm | LLM ready=True latency=2.00s
+2025-08-30 13:08:10 | INFO | llm | Embeddings ready=True latency=0.06s
+2025-08-30 13:08:10 | INFO | uvicorn.error | Startup OK | online_search=True | vector_store=memory
+2025-08-30 13:08:10 | INFO | uvicorn.error | Application startup complete.
+2025-08-30 13:08:21 | INFO | uvicorn.error | Shutting down
+2025-08-30 13:08:21 | INFO | uvicorn.error | Waiting for application shutdown.
+2025-08-30 13:08:21 | INFO | uvicorn.error | Application shutdown complete.
+2025-08-30 13:08:21 | INFO | uvicorn.error | Finished server process [26752]
+2025-08-30 13:09:40 | INFO | vectorstore | vectorstore: PG not configured; using in-memory store
+2025-08-30 13:09:40 | INFO | uvicorn.error | Started server process [10896]
+2025-08-30 13:09:40 | INFO | uvicorn.error | Waiting for application startup.
+2025-08-30 13:09:42 | INFO | llm | LLM ready=True latency=1.83s
+2025-08-30 13:09:42 | INFO | llm | Embeddings ready=True latency=0.07s
+2025-08-30 13:09:42 | INFO | uvicorn.error | Startup OK | online_search=True | vector_store=memory
+2025-08-30 13:09:42 | INFO | uvicorn.error | Application startup complete.
+2025-08-30 13:09:57 | INFO | llm | LLM ready=True latency=1.93s
+2025-08-30 13:09:57 | INFO | llm | Embeddings ready=True latency=0.08s
+2025-08-30 13:09:57 | INFO | uvicorn.access | 127.0.0.1:57817 - "GET /api/health HTTP/1.1" 200
+2025-08-30 13:10:07 | INFO | llm | LLM ready=True latency=1.84s
+2025-08-30 13:10:07 | INFO | llm | Embeddings ready=True latency=0.08s
+2025-08-30 13:10:07 | INFO | uvicorn.access | 127.0.0.1:57821 - "GET /api/health HTTP/1.1" 200
+2025-08-30 13:10:10 | INFO | uvicorn.access | 127.0.0.1:57826 - "GET /api/companies HTTP/1.1" 200
+2025-08-30 13:10:16 | INFO | llm | LLM ready=True latency=1.79s
+2025-08-30 13:10:16 | INFO | llm | Embeddings ready=True latency=0.06s
+2025-08-30 13:10:16 | INFO | uvicorn.access | 127.0.0.1:57828 - "GET /api/health HTTP/1.1" 200
+2025-08-30 13:10:18 | INFO | uvicorn.access | 127.0.0.1:57832 - "GET /api/stream/research/c1 HTTP/1.1" 200
+2025-08-30 13:10:18 | INFO | orchestrator | events:research:start company=stc (Saudi Telecom Company) id=c1
+2025-08-30 13:10:18 | INFO | search | ddgs.text q='site:stc.com.sa customer experience' region=xa-en safe=moderate backend=auto timeout=20s proxy=False
+2025-08-30 13:10:19 | INFO | primp | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Astc.com.sa%20customer%20experience 200
+2025-08-30 13:10:19 | INFO | primp | response: https://www.bing.com/search?q=site%3Astc.com.sa+customer+experience&pq=site%3Astc.com.sa+customer+experience&cc=en 200
+2025-08-30 13:10:21 | INFO | primp | response: https://yandex.com/search/site/?text=site%3Astc.com.sa+customer+experience&web=1&searchid=2245613 200
+2025-08-30 13:10:22 | INFO | primp | response: https://search.brave.com/search?q=site%3Astc.com.sa+customer+experience&source=web 200
+2025-08-30 13:10:22 | INFO | search | ddgs.text -> 5 hits
+2025-08-30 13:10:23 | INFO | fetch | fetched https://www.stc.com.sa/content/stc/sa/en/personal/support/contact-us/customer-care.html chars=16474
+2025-08-30 13:10:23 | INFO | fetch | fetched https://careers.stc.com.sa/job/Marketing,-Comms,-and-CX-Director/856636123/ chars=2752
+2025-08-30 13:10:24 | INFO | fetch | fetched https://www.stc.com.sa/content/stc/sa/en/personal/loyalty.html chars=15507
+2025-08-30 13:10:25 | INFO | fetch | fetched https://www.stc.com.sa/content/stc/sa/en/personal/mobile/other-services/budget-control.html chars=15615
+2025-08-30 13:10:25 | WARNING | fetch | fetch failed for https://www.stc.com.sa/content/stc/sa/en/wholesale/voice-and-roaming/roaming/e-sim.html: 500 Server Error: Internal Server Error for url: https://www.stc.com.sa/content/stc/sa/en/wholesale/voice-and-roaming/roaming/e-sim.html
+2025-08-30 13:10:25 | INFO | search | ddgs.text q='stc (Saudi Telecom Company) reviews NPS' region=xa-en safe=moderate backend=auto timeout=20s proxy=False
+2025-08-30 13:10:25 | INFO | primp | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stc%20%28Saudi%20Telecom%20Company%29%20reviews%20NPS 200
+2025-08-30 13:10:26 | INFO | primp | response: https://www.mojeek.com/search?q=stc+%28Saudi+Telecom+Company%29+reviews+NPS 200
+2025-08-30 13:10:26 | INFO | search | ddgs.text -> 5 hits
+2025-08-30 13:10:27 | INFO | fetch | fetched https://brandfinance.com/press-releases/telecom-brand-values-grow-globally-with-maturity-of-new-technologies-improving-customer-perception chars=17512
+2025-08-30 13:10:27 | WARNING | fetch | fetch failed for https://clutch.co/profile/foresiet: 403 Client Error: Forbidden for url: https://clutch.co/profile/foresiet
+2025-08-30 13:10:30 | INFO | fetch | fetched https://www.tmforum.org/about/awards-and-recognition/catalyst-team-awards/ chars=70986
+2025-08-30 13:10:31 | INFO | fetch | fetched https://brandfinance.com/press-releases/middle-east-brand-values-grow-quickly-aramco-remains-on-top chars=14235
+2025-08-30 13:10:31 | WARNING | fetch | fetch failed for https://teknologi.bisnis.com/read/20240626/84/1777234/telkomsel-borong-tiga-penghargaan-di-tm-forums-innovation-awards-2024: 403 Client Error: Forbidden for url: https://teknologi.bisnis.com/read/20240626/84/1777234/telkomsel-borong-tiga-penghargaan-di-tm-forums-innovation-awards-2024
+2025-08-30 13:10:31 | INFO | search | ddgs.text q='stc (Saudi Telecom Company) support channels' region=xa-en safe=moderate backend=auto timeout=20s proxy=False
+2025-08-30 13:10:32 | INFO | primp | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stc%20%28Saudi%20Telecom%20Company%29%20support%20channels 200
+2025-08-30 13:10:32 | INFO | primp | response: https://www.mojeek.com/search?q=stc+%28Saudi+Telecom+Company%29+support+channels 200
+2025-08-30 13:10:32 | INFO | search | ddgs.text -> 5 hits
+2025-08-30 13:10:33 | INFO | fetch | fetched https://en.wikipedia.org/wiki/Saudi_Telecom_Company chars=14305
+2025-08-30 13:10:34 | INFO | fetch | fetched https://insidetelecom.com/saudi-telecommunication-company-stc-when-an-oligopoly-replaces-a-fading-monopoly/ chars=13681
+2025-08-30 13:10:34 | WARNING | fetch | fetch failed for https://omdia.tech.informa.com/om033163/saudi-telecom-company-stc-company-update--2023: 403 Client Error: Forbidden for url: https://omdia.tech.informa.com/om033163/saudi-telecom-company-stc-company-update--2023
+2025-08-30 13:10:34 | WARNING | fetch | fetch failed for https://ace-myhomework.com/knowledgebase/saudi-telecom-company: 403 Client Error: Forbidden for url: https://ace-myhomework.com/knowledgebase/saudi-telecom-company
+2025-08-30 13:10:36 | INFO | fetch | fetched https://dataxis.com/product/actor-profile/stc-television-and-telecom/ chars=51855
+2025-08-30 13:10:56 | INFO | llm | embed batch=60 latency=20.07s
+2025-08-30 13:10:56 | INFO | llm | embed batch=1 latency=0.09s
+2025-08-30 13:10:56 | INFO | orchestrator | enrichment: synthesize stc (Saudi Telecom Company) hits=5
+2025-08-30 13:10:56 | INFO | orchestrator | enrichment built chars=3570
+2025-08-30 13:11:15 | INFO | llm | LLM stream total_chars=705 latency=18.61s
+2025-08-30 13:11:15 | INFO | orchestrator | events:research:done company=stc (Saudi Telecom Company) hits=5
+2025-08-30 13:11:50 | INFO | llm | LLM ready=True latency=2.14s
+2025-08-30 13:11:50 | INFO | llm | Embeddings ready=True latency=0.09s
+2025-08-30 13:11:50 | INFO | uvicorn.access | 127.0.0.1:57928 - "GET /api/health HTTP/1.1" 200
+2025-08-30 13:11:52 | INFO | uvicorn.access | 127.0.0.1:57935 - "GET /api/stream/outreach/c1/preview?bypass=true HTTP/1.1" 200
+2025-08-30 13:11:52 | INFO | llm | embed batch=1 latency=0.11s
+2025-08-30 13:12:03 | INFO | llm | LLM stream total_chars=833 latency=11.10s
+2025-08-30 13:12:25 | INFO | llm | LLM ready=True latency=2.19s
+2025-08-30 13:12:25 | INFO | llm | Embeddings ready=True latency=0.06s
+2025-08-30 13:12:25 | INFO | uvicorn.access | 127.0.0.1:57942 - "GET /api/health HTTP/1.1" 200
+2025-08-30 13:12:27 | INFO | uvicorn.access | 127.0.0.1:57946 - "GET /api/stream/logs HTTP/1.1" 200
+2025-08-30 13:12:53 | INFO | llm | LLM ready=True latency=1.96s
+2025-08-30 13:12:53 | INFO | llm | Embeddings ready=True latency=0.08s
+2025-08-30 13:12:53 | INFO | uvicorn.access | 127.0.0.1:57950 - "GET /api/health HTTP/1.1" 200
+2025-08-30 13:12:55 | INFO | llm | LLM ready=True latency=3.04s
+2025-08-30 13:12:55 | INFO | llm | Embeddings ready=True latency=0.08s
+2025-08-30 13:12:55 | INFO | uvicorn.access | 127.0.0.1:57952 - "GET /api/health HTTP/1.1" 200
+2025-08-30 13:12:57 | INFO | uvicorn.access | 127.0.0.1:57958 - "GET /api/stream/research/c2 HTTP/1.1" 200
+2025-08-30 13:12:57 | INFO | orchestrator | events:research:start company=First Abu Dhabi Bank (FAB) id=c2
+2025-08-30 13:12:57 | INFO | search | ddgs.text q='site:bankfab.com customer experience' region=xa-en safe=moderate backend=auto timeout=20s proxy=False
+2025-08-30 13:12:58 | INFO | primp | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Abankfab.com%20customer%20experience 200
+2025-08-30 13:12:58 | INFO | primp | response: https://www.bing.com/search?q=site%3Abankfab.com+customer+experience&pq=site%3Abankfab.com+customer+experience&cc=en 200
+2025-08-30 13:13:00 | INFO | primp | response: https://yandex.com/search/site/?text=site%3Abankfab.com+customer+experience&web=1&searchid=4720073 200
+2025-08-30 13:13:00 | INFO | search | ddgs.text -> 5 hits
+2025-08-30 13:13:02 | INFO | fetch | fetched https://www.bankfab.com/en-ae/about-fab chars=3540
+2025-08-30 13:13:04 | INFO | fetch | fetched https://www.bankfab.com/en-ae/about-fab/sustainability/social-responsibility chars=5248
+2025-08-30 13:13:06 | INFO | fetch | fetched https://www.bankfab.com/en-gb/about-fab/about-us chars=4242
+2025-08-30 13:13:08 | INFO | fetch | fetched https://www.bankfab.com/en-ae/about-fab/group/about-us chars=5395
+2025-08-30 13:13:10 | INFO | fetch | fetched https://www.bankfab.com/en-ae/personal/help-and-support/fraud-and-security chars=6662
+2025-08-30 13:13:10 | INFO | search | ddgs.text q='First Abu Dhabi Bank (FAB) reviews NPS' region=xa-en safe=moderate backend=auto timeout=20s proxy=False
+2025-08-30 13:13:11 | INFO | primp | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=First%20Abu%20Dhabi%20Bank%20%28FAB%29%20reviews%20NPS 200
+2025-08-30 13:13:11 | INFO | primp | response: https://www.google.com/search?q=First+Abu+Dhabi+Bank+%28FAB%29+reviews+NPS&filter=1&start=0&asearch=arc&async=arc_id%3Asrp_X9KEshsQRQ1H4M8F0vUxiNo_100%2Cuse_ac%3Atrue%2C_fmt%3Aprog&ie=UTF-8&oe=UTF-8&hl=en-XA&lr=lang_en&cr=countryXA 200
+2025-08-30 13:13:12 | INFO | search | ddgs.text -> 5 hits
+2025-08-30 13:13:26 | INFO | fetch | fetched https://fabannualreport2024.com/documents/FAB-annual-report-2024.pdf chars=13052342
+2025-08-30 13:13:28 | INFO | fetch | fetched https://www.bankfab.com/en-ae/about-fab/investor-relations/debt-investor-information/credit-ratings chars=2841
+2025-08-30 13:13:30 | INFO | fetch | fetched https://fabannualreport2024.com/ chars=10908
+2025-08-30 13:14:25 | INFO | fetch | fetched https://www.dubaifirst.com/-/media/fabgroup/home/about-fab/sustainability/reports/2019esgreport_corp.pdf chars=43862967
+2025-08-30 13:14:27 | INFO | fetch | fetched https://gloat.com/impacts/first-abu-dhabi-bank-gave-their-talent-a-personalized-career-climbing-wall/ chars=18482
+2025-08-30 13:14:27 | INFO | search | ddgs.text q='First Abu Dhabi Bank (FAB) support channels' region=xa-en safe=moderate backend=auto timeout=20s proxy=False
+2025-08-30 13:14:28 | INFO | primp | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=First%20Abu%20Dhabi%20Bank%20%28FAB%29%20support%20channels 200
+2025-08-30 13:14:28 | INFO | primp | response: https://www.bing.com/search?q=First+Abu+Dhabi+Bank+%28FAB%29+support+channels&pq=First+Abu+Dhabi+Bank+%28FAB%29+support+channels&cc=en 200
+2025-08-30 13:14:28 | INFO | search | ddgs.text -> 5 hits
+2025-08-30 13:14:30 | WARNING | fetch | fetch failed for https://www.zhihu.com/question/626729181: 403 Client Error: Forbidden for url: https://www.zhihu.com/question/626729181
+2025-08-30 13:14:33 | INFO | fetch | fetched https://zhidao.baidu.com/question/1947807648944181548.html chars=78
+2025-08-30 13:14:37 | INFO | fetch | fetched https://zhidao.baidu.com/question/376246823.html chars=78
+2025-08-30 13:14:39 | WARNING | fetch | fetch failed for https://www.zhihu.com/question/415816830: 403 Client Error: Forbidden for url: https://www.zhihu.com/question/415816830
+2025-08-30 13:14:43 | INFO | fetch | fetched https://zhidao.baidu.com/question/44933874.html chars=78
+2025-08-30 13:15:04 | INFO | llm | embed batch=63 latency=21.49s
+2025-08-30 13:15:04 | INFO | llm | embed batch=1 latency=0.11s
+2025-08-30 13:15:04 | INFO | orchestrator | enrichment: synthesize First Abu Dhabi Bank (FAB) hits=5
+2025-08-30 13:15:04 | INFO | orchestrator | enrichment built chars=3509
+2025-08-30 13:15:23 | INFO | llm | LLM stream total_chars=526 latency=18.79s
+2025-08-30 13:15:23 | INFO | orchestrator | events:research:done company=First Abu Dhabi Bank (FAB) hits=5
+2025-08-30 13:33:16 | INFO | uvicorn.error | Shutting down
+2025-08-30 13:33:16 | INFO | uvicorn.error | Waiting for application shutdown.
+2025-08-30 13:33:16 | INFO | uvicorn.error | Application shutdown complete.
+2025-08-30 13:33:16 | INFO | uvicorn.error | Finished server process [10896]
+2025-08-30 13:38:44 | INFO | vectorstore | vectorstore: PG not configured; using in-memory store
+2025-08-30 13:38:44 | INFO | uvicorn.error | Started server process [10392]
+2025-08-30 13:38:44 | INFO | uvicorn.error | Waiting for application startup.
+2025-08-30 13:38:49 | INFO | llm | LLM ready=True latency=4.49s
+2025-08-30 13:38:50 | INFO | llm | Embeddings ready=True latency=0.85s
+2025-08-30 13:38:50 | INFO | uvicorn.error | Startup OK | online_search=True | vector_store=memory
+2025-08-30 13:38:50 | INFO | uvicorn.error | Application startup complete.
+2025-08-30 13:38:54 | INFO | llm | LLM ready=True latency=1.85s
+2025-08-30 13:38:54 | INFO | llm | Embeddings ready=True latency=0.07s
+2025-08-30 13:38:54 | INFO | uvicorn.access | 127.0.0.1:51535 - "GET /api/health HTTP/1.1" 200
+2025-08-30 13:39:07 | INFO | llm | LLM ready=True latency=1.98s
+2025-08-30 13:39:07 | INFO | llm | Embeddings ready=True latency=0.06s
+2025-08-30 13:39:07 | INFO | uvicorn.access | 127.0.0.1:51541 - "GET /api/health HTTP/1.1" 200
+2025-08-30 13:39:09 | INFO | uvicorn.access | 127.0.0.1:51545 - "GET /api/companies HTTP/1.1" 200
+2025-08-30 13:39:23 | INFO | llm | LLM ready=True latency=1.90s
+2025-08-30 13:39:23 | INFO | llm | Embeddings ready=True latency=0.07s
+2025-08-30 13:39:23 | INFO | uvicorn.access | 127.0.0.1:51547 - "GET /api/health HTTP/1.1" 200
+2025-08-30 13:39:25 | INFO | uvicorn.access | 127.0.0.1:51551 - "GET /api/stream/research/c1?online=true HTTP/1.1" 200
+2025-08-30 13:39:25 | INFO | orchestrator | events:research:start company=stc (Saudi Telecom Company) id=c1 online=True
+2025-08-30 13:39:25 | INFO | search | ddgs.text q='site:stc.com.sa customer experience' region=xa-en safe=moderate backend=auto timeout=20s proxy=False
+2025-08-30 13:39:26 | INFO | primp | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Astc.com.sa%20customer%20experience 200
+2025-08-30 13:39:27 | INFO | primp | response: https://www.mojeek.com/search?q=site%3Astc.com.sa+customer+experience 200
+2025-08-30 13:39:27 | INFO | search | ddgs.text -> 5 hits
+2025-08-30 13:39:29 | INFO | fetch | fetched https://www.stc.com.sa/content/stc/sa/en/personal/mobile/other-services.html chars=26915
+2025-08-30 13:39:29 | WARNING | fetch | fetch failed for https://www.stc.com.sa/content/stc/sa/en/business/connect.html: 500 Server Error: Internal Server Error for url: https://www.stc.com.sa/content/stc/sa/en/business/connect.html
+2025-08-30 13:39:29 | INFO | fetch | fetched https://www.stc.com.sa/content/stc/sa/en/personal/mobile/packages/sawa-ziyara.html chars=17808
+2025-08-30 13:39:30 | INFO | fetch | fetched https://www.stc.com.sa/content/stc/sa/en/personal/lifestyle.html chars=15208
+2025-08-30 13:39:31 | INFO | fetch | fetched https://www.stc.com.sa/content/stc/sa/en/personal/mobile/self-activation-sim.html chars=16908
+2025-08-30 13:39:31 | INFO | search | ddgs.text q='stc (Saudi Telecom Company) reviews NPS' region=xa-en safe=moderate backend=auto timeout=20s proxy=False
+2025-08-30 13:39:31 | INFO | primp | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stc%20%28Saudi%20Telecom%20Company%29%20reviews%20NPS 200
+2025-08-30 13:39:31 | INFO | primp | response: https://www.mojeek.com/search?q=stc+%28Saudi+Telecom+Company%29+reviews+NPS 200
+2025-08-30 13:39:31 | INFO | search | ddgs.text -> 5 hits
+2025-08-30 13:39:32 | INFO | fetch | fetched https://brandfinance.com/press-releases/telecom-brand-values-grow-globally-with-maturity-of-new-technologies-improving-customer-perception chars=17512
+2025-08-30 13:39:32 | WARNING | fetch | fetch failed for https://clutch.co/profile/foresiet: 403 Client Error: Forbidden for url: https://clutch.co/profile/foresiet
+2025-08-30 13:39:34 | INFO | fetch | fetched https://www.tmforum.org/about/awards-and-recognition/catalyst-team-awards/ chars=70986
+2025-08-30 13:39:35 | INFO | fetch | fetched https://brandfinance.com/press-releases/middle-east-brand-values-grow-quickly-aramco-remains-on-top chars=14235
+2025-08-30 13:39:35 | WARNING | fetch | fetch failed for https://teknologi.bisnis.com/read/20240626/84/1777234/telkomsel-borong-tiga-penghargaan-di-tm-forums-innovation-awards-2024: 403 Client Error: Forbidden for url: https://teknologi.bisnis.com/read/20240626/84/1777234/telkomsel-borong-tiga-penghargaan-di-tm-forums-innovation-awards-2024
+2025-08-30 13:39:35 | INFO | search | ddgs.text q='stc (Saudi Telecom Company) support channels' region=xa-en safe=moderate backend=auto timeout=20s proxy=False
+2025-08-30 13:39:35 | INFO | primp | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stc%20%28Saudi%20Telecom%20Company%29%20support%20channels 200
+2025-08-30 13:39:36 | INFO | primp | response: https://search.yahoo.com/search;_ylt=upkeHF5KUwmwo4cUmhu_eJgY;_ylu=mr8OdExEvCjGp5eVHgbaPvfiAPrjZVhjpCzB8lwO4d5DXyE?p=stc+%28Saudi+Telecom+Company%29+support+channels 200
+2025-08-30 13:39:37 | INFO | search | ddgs.text -> 5 hits
+2025-08-30 13:39:38 | INFO | fetch | fetched https://www.stc.com.sa/content/stc/sa/en/personal/support/contact-us/customer-care.html chars=16474
+2025-08-30 13:39:38 | WARNING | fetch | fetch failed for https://www.channels.com.sa/: HTTPSConnectionPool(host='www.channels.com.sa', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:997)')))
+2025-08-30 13:39:38 | WARNING | fetch | fetch failed for https://www.stc.com/content/stcgroupwebsite/sa/en/rawafed/we-support-you.html: 500 Server Error: Internal Server Error for url: https://www.stc.com/content/stcgroupwebsite/sa/en/rawafed/we-support-you.html
+2025-08-30 13:39:38 | INFO | fetch | fetched https://ksaexpats.com/stc-customer-care-number-ksa/ chars=5317
+2025-08-30 13:39:39 | INFO | fetch | fetched https://www.stc.com.sa/content/stc/sa/en/business/static/how-to-reach-us.html chars=15513
+2025-08-30 13:39:59 | INFO | llm | embed batch=60 latency=20.14s
+2025-08-30 13:39:59 | INFO | llm | embed batch=1 latency=0.11s
+2025-08-30 13:39:59 | INFO | orchestrator | enrichment: synthesize stc (Saudi Telecom Company) hits=5
+2025-08-30 13:39:59 | INFO | orchestrator | enrichment built chars=3480
+2025-08-30 13:40:19 | INFO | llm | LLM md_stream total_chars=0 latency=19.15s
+2025-08-30 13:40:19 | INFO | orchestrator | events:research:done company=stc (Saudi Telecom Company) hits=5
+2025-08-30 13:42:23 | INFO | llm | LLM ready=True latency=2.30s
+2025-08-30 13:42:23 | INFO | llm | Embeddings ready=True latency=0.09s
+2025-08-30 13:42:23 | INFO | uvicorn.access | 127.0.0.1:55119 - "GET /api/health HTTP/1.1" 200
+2025-08-30 13:42:25 | INFO | uvicorn.access | 127.0.0.1:55125 - "GET /api/stream/outreach/c1/preview?online=true&bypass=true HTTP/1.1" 200
+2025-08-30 13:42:25 | INFO | orchestrator | people: websearch for stc (Saudi Telecom Company)
+2025-08-30 13:42:25 | INFO | search | ddgs.text q='site:linkedin.com ("Head of Customer Experience" OR "Customer Experience Director" OR "Chief Customer Officer" OR "VP Customer Experience" OR "CX Lead") stc (Saudi Telecom Company)' region=xa-en safe=moderate backend=auto timeout=20s proxy=False
+2025-08-30 13:42:26 | INFO | primp | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Alinkedin.com%20%28%22Head%20of%20Customer%20Experience%22%20OR%20%22Customer%20Experience%20Director%22%20OR%20%22Chief%20Customer%20Officer%22%20OR%20%22VP%20Customer%20Experience%22%20OR%20%22CX%20Lead%22%29%20stc%20%28Saudi%20Telecom%20Company%29 200
+2025-08-30 13:42:27 | INFO | primp | response: https://www.google.com/search?q=site%3Alinkedin.com+%28%22Head+of+Customer+Experience%22+OR+%22Customer+Experience+Director%22+OR+%22Chief+Customer+Officer%22+OR+%22VP+Customer+Experience%22+OR+%22CX+Lead%22%29+stc+%28Saudi+Telecom+Company%29&filter=1&start=0&asearch=arc&async=arc_id%3Asrp_tq1AWsd3EQ9UaKRYoct-hwA_100%2Cuse_ac%3Atrue%2C_fmt%3Aprog&ie=UTF-8&oe=UTF-8&hl=en-XA&lr=lang_en&cr=countryXA 200
+2025-08-30 13:42:27 | INFO | search | ddgs.text -> 8 hits
+2025-08-30 13:42:27 | ERROR | uvicorn.error | Exception in ASGI application
+  + Exception Group Traceback (most recent call last):
+  |   File "D:\Lucidiya\.venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 409, in run_asgi
+  |     result = await app(  # type: ignore[func-returns-value]
+  |   File "D:\Lucidiya\.venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+  |     return await self.app(scope, receive, send)
+  |   File "D:\Lucidiya\.venv\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+  |     await super().__call__(scope, receive, send)
+  |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\applications.py", line 113, in __call__
+  |     await self.middleware_stack(scope, receive, send)
+  |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+  |     raise exc
+  |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+  |     await self.app(scope, receive, _send)
+  |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+  |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+  |     raise exc
+  |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+  |     await app(scope, receive, sender)
+  |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\routing.py", line 716, in __call__
+  |     await self.middleware_stack(scope, receive, send)
+  |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\routing.py", line 736, in app
+  |     await route.handle(scope, receive, send)
+  |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\routing.py", line 290, in handle
+  |     await self.app(scope, receive, send)
+  |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\routing.py", line 78, in app
+  |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+  |     raise exc
+  |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+  |     await app(scope, receive, sender)
+  |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\routing.py", line 76, in app
+  |     await response(scope, receive, send)
+  |   File "D:\Lucidiya\.venv\lib\site-packages\sse_starlette\sse.py", line 255, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "D:\Lucidiya\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 772, in __aexit__
+  |     raise BaseExceptionGroup(
+  | exceptiongroup.ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "D:\Lucidiya\.venv\lib\site-packages\sse_starlette\sse.py", line 258, in cancel_on_finish
+    |     await coro()
+    |   File "D:\Lucidiya\.venv\lib\site-packages\sse_starlette\sse.py", line 177, in _stream_response
+    |     async for data in self.body_iterator:
+    |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\concurrency.py", line 61, in iterate_in_threadpool
+    |     yield await anyio.to_thread.run_sync(_next, as_iterator)
+    |   File "D:\Lucidiya\.venv\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    |     return await get_async_backend().run_sync_in_worker_thread(
+    |   File "D:\Lucidiya\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2476, in run_sync_in_worker_thread
+    |     return await future
+    |   File "D:\Lucidiya\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    |     result = context.run(func, *args)
+    |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\concurrency.py", line 50, in _next
+    |     return next(iterator)
+    |   File "D:\Lucidiya\app\main.py", line 129, in gen
+    |     for ev in orch.preview_outreach_company_events(company_id, bypass_compliance=bypass):
+    |   File "D:\Lucidiya\app\services\orchestrator.py", line 125, in preview_outreach_company_events
+    |     contacts = self.people.suggest(c, online=use_online)
+    |   File "D:\Lucidiya\app\agents\people.py", line 60, in suggest
+    |     people.append(Person(name=name, role=role, email=email))
+    | TypeError: Person.__init__() missing 2 required positional arguments: 'id' and 'seniority'
+    +------------------------------------
+2025-08-30 13:44:13 | INFO | uvicorn.error | Shutting down
+2025-08-30 13:44:13 | INFO | uvicorn.error | Waiting for application shutdown.
+2025-08-30 13:44:13 | INFO | uvicorn.error | Application shutdown complete.
+2025-08-30 13:44:13 | INFO | uvicorn.error | Finished server process [10392]
+2025-08-30 13:44:15 | INFO | vectorstore | vectorstore: PG not configured; using in-memory store
+2025-08-30 13:44:15 | INFO | uvicorn.error | Started server process [15300]
+2025-08-30 13:44:15 | INFO | uvicorn.error | Waiting for application startup.
+2025-08-30 13:44:18 | INFO | llm | LLM ready=True latency=2.41s
+2025-08-30 13:44:18 | INFO | llm | Embeddings ready=True latency=0.07s
+2025-08-30 13:44:18 | INFO | uvicorn.error | Startup OK | online_search=True | vector_store=memory
+2025-08-30 13:44:18 | INFO | uvicorn.error | Application startup complete.
+2025-08-30 13:45:05 | INFO | uvicorn.error | Shutting down
+2025-08-30 13:45:05 | INFO | uvicorn.error | Waiting for application shutdown.
+2025-08-30 13:45:05 | INFO | uvicorn.error | Application shutdown complete.
+2025-08-30 13:45:05 | INFO | uvicorn.error | Finished server process [15300]
+2025-08-30 13:45:07 | INFO | vectorstore | vectorstore: PG not configured; using in-memory store
+2025-08-30 13:45:07 | INFO | uvicorn.error | Started server process [17564]
+2025-08-30 13:45:07 | INFO | uvicorn.error | Waiting for application startup.
+2025-08-30 13:45:10 | INFO | llm | LLM ready=True latency=2.42s
+2025-08-30 13:45:10 | INFO | llm | Embeddings ready=True latency=0.04s
+2025-08-30 13:45:10 | INFO | uvicorn.error | Startup OK | online_search=True | vector_store=memory
+2025-08-30 13:45:10 | INFO | uvicorn.error | Application startup complete.
+2025-08-30 13:45:27 | INFO | llm | LLM ready=True latency=2.01s
+2025-08-30 13:45:27 | INFO | llm | Embeddings ready=True latency=0.08s
+2025-08-30 13:45:27 | INFO | uvicorn.access | 127.0.0.1:56873 - "GET /api/health HTTP/1.1" 200
+2025-08-30 13:45:36 | INFO | llm | LLM ready=True latency=2.24s
+2025-08-30 13:45:36 | INFO | llm | Embeddings ready=True latency=0.06s
+2025-08-30 13:45:36 | INFO | uvicorn.access | 127.0.0.1:56881 - "GET /api/health HTTP/1.1" 200
+2025-08-30 13:45:38 | INFO | uvicorn.access | 127.0.0.1:56885 - "GET /api/companies HTTP/1.1" 200
+2025-08-30 13:45:44 | INFO | llm | LLM ready=True latency=2.13s
+2025-08-30 13:45:44 | INFO | llm | Embeddings ready=True latency=0.09s
+2025-08-30 13:45:44 | INFO | uvicorn.access | 127.0.0.1:56887 - "GET /api/health HTTP/1.1" 200
+2025-08-30 13:45:46 | INFO | uvicorn.access | 127.0.0.1:56891 - "GET /api/stream/research/c1?online=true HTTP/1.1" 200
+2025-08-30 13:45:46 | INFO | orchestrator | events:research:start company=stc (Saudi Telecom Company) id=c1 online=True
+2025-08-30 13:45:46 | INFO | search | ddgs.text q='site:stc.com.sa customer experience' region=xa-en safe=moderate backend=auto timeout=20s proxy=False
+2025-08-30 13:45:47 | INFO | primp | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Astc.com.sa%20customer%20experience 200
+2025-08-30 13:45:48 | INFO | primp | response: https://search.yahoo.com/search;_ylt=GmRP81hE1HeE4zFhJTsRHVVa;_ylu=vgGyrbU1Jx3quTnuh2JYOszyn3_Cr_gBbI-ugvsSGdvTjW4?p=site%3Astc.com.sa+customer+experience 200
+2025-08-30 13:45:48 | INFO | search | ddgs.text -> 5 hits
+2025-08-30 13:45:50 | WARNING | fetch | fetch failed for https://www.stc.com.sa/content/dam/stc/stc-annual-report-2023/strategy-and-kpis.html: 500 Server Error: Internal Server Error for url: https://www.stc.com.sa/content/dam/stc/stc-annual-report-2023/strategy-and-kpis.html
+2025-08-30 13:45:50 | WARNING | fetch | fetch failed for https://www.stc.com.sa/content/dam/stc/stc-annual-report-2022/en/stc-group.html: 500 Server Error: Internal Server Error for url: https://www.stc.com.sa/content/dam/stc/stc-annual-report-2022/en/stc-group.html
+2025-08-30 13:45:50 | WARNING | fetch | fetch failed for https://www.stc.com.sa/content/dam/stc/stc-annual-report-2023/: 500 Server Error: Internal Server Error for url: https://www.stc.com.sa/content/dam/stc/stc-annual-report-2023/
+2025-08-30 13:45:50 | WARNING | fetch | fetch failed for https://www.stc.com.sa/content/dam/stc/stc-annual-report-2024/commercial.html: 500 Server Error: Internal Server Error for url: https://www.stc.com.sa/content/dam/stc/stc-annual-report-2024/commercial.html
+2025-08-30 13:45:54 | INFO | fetch | fetched https://www.bing.com/aclick?ld=e8SCzn-rNYELMw-kzOS1OmPjVUCUzAvl4497dFyZXQwWkPELUwZ6zuAAWI5QEvpdsOtP0SRa-4e_kBkFCC9lwndef6QQirNLB2Pwd8hR7AwnU0wHQcO8teS-Le1Uco49wvxz1v2RD1VvufOsvOq_mHWYEvTfkgdZJslwQYLS8MkcM2bat-03uo1Y7iW56sydDck1hjjtTcV_23nwPKO8W2iC4iKy4&u=aHR0cHMlM2ElMmYlMmZhZC5kb3VibGVjbGljay5uZXQlMmZzZWFyY2hhZHMlMmZsaW5rJTJmY2xpY2slM2ZsaWQlM2Q0MzcwMDA3ODkyNzAyMjg3MSUyNmRzX3Nfa3dnaWQlM2Q1ODcwMDAwODYzMTQ1MTkwMSUyNmRzX2FfY2lkJTNkNDAwODc5NTk3JTI2ZHNfYV9jYWlkJTNkMjA4NjczMjMzMzMlMjZkc19hX2FnaWQlM2QxNjA2NjAzMDQ1OTAlMjZkc19hX2xpZCUzZGt3ZC0xMzYxNjk2NDMzMzE2JTI2JTI2ZHNfZV9hZGlkJTNkODEyMjY1NDkxNDk5NDElMjZkc19lX3RhcmdldF9pZCUzZGt3ZC04MTIyNjczNDIwNTAzMCUzYWxvYy0yMTYlMjYlMjZkc19lX25ldHdvcmslM2RvJTI2ZHNfdXJsX3YlM2QyJTI2ZHNfZGVzdF91cmwlM2RodHRwcyUzYSUyZiUyZnd3dy5leGVkLmhicy5lZHUlMmZ0cmFuc2Zvcm1pbmctY3VzdG9tZXItZXhwZXJpZW5jZXMlM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RwYWlkLXNlYXJjaCUyNnV0bV9jYW1wYWlnbiUzZG5vbi1icmFuZC1wcm9ncmFtLXRjZS1nbG9iYWwtbm9uZS1waHJhc2UtY3Jvc3MtZGV2aWNlLWFsbCUyNnV0bV9pZCUzZGNvcmUlMjZnY2xpZCUzZDliMzRhNDMzNzlmYzExMjUyOTE3Y2M4MWNhYzhkOGQ1JTI2Z2Nsc3JjJTNkM3AuZHMlMjYlMjZtc2Nsa2lkJTNkOWIzNGE0MzM3OWZjMTEyNTI5MTdjYzgxY2FjOGQ4ZDU&rlid=9b34a43379fc11252917cc81cac8d8d5 chars=10405
+2025-08-30 13:45:54 | INFO | search | ddgs.text q='stc (Saudi Telecom Company) reviews NPS' region=xa-en safe=moderate backend=auto timeout=20s proxy=False
+2025-08-30 13:45:55 | INFO | primp | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stc%20%28Saudi%20Telecom%20Company%29%20reviews%20NPS 200
+2025-08-30 13:45:55 | INFO | primp | response: https://yandex.com/search/site/?text=stc+%28Saudi+Telecom+Company%29+reviews+NPS&web=1&searchid=1113466 200
+2025-08-30 13:45:55 | INFO | search | ddgs.text -> 5 hits
+2025-08-30 13:45:56 | WARNING | fetch | fetch failed for https://www.bloomberg.com/quote/STC:AB: 403 Client Error: Forbidden for url: https://www.bloomberg.com/quote/STC:AB
+2025-08-30 13:45:56 | WARNING | fetch | fetch failed for https://www.indeed.com/cmp/Stc-Saudi-Telecom/reviews: 403 Client Error: Forbidden for url: https://www.indeed.com/cmp/Stc-Saudi-Telecom/reviews
+2025-08-30 13:45:57 | INFO | fetch | fetched https://techafricanews.com/2025/08/29/ethio-telecom-deepens-ties-with-saudi-telecom-to-accelerate-digital-transformation/ chars=4379
+2025-08-30 13:45:59 | INFO | fetch | fetched https://www.nucamp.co/blog/coding-bootcamp-saudi-arabia-sau-top-10-tech-companies-to-work-for-in-saudi-arabia-in-2024 chars=24961
+2025-08-30 13:46:00 | INFO | fetch | fetched https://saudiarabiaesim.com/operators/ chars=10468
+2025-08-30 13:46:00 | INFO | search | ddgs.text q='stc (Saudi Telecom Company) support channels' region=xa-en safe=moderate backend=auto timeout=20s proxy=False
+2025-08-30 13:46:00 | INFO | primp | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stc%20%28Saudi%20Telecom%20Company%29%20support%20channels 200
+2025-08-30 13:46:00 | INFO | primp | response: https://www.mojeek.com/search?q=stc+%28Saudi+Telecom+Company%29+support+channels 200
+2025-08-30 13:46:00 | INFO | search | ddgs.text -> 5 hits
+2025-08-30 13:46:01 | INFO | fetch | fetched https://en.wikipedia.org/wiki/Saudi_Telecom_Company chars=14305
+2025-08-30 13:46:02 | INFO | fetch | fetched https://insidetelecom.com/saudi-telecommunication-company-stc-when-an-oligopoly-replaces-a-fading-monopoly/ chars=13681
+2025-08-30 13:46:02 | WARNING | fetch | fetch failed for https://omdia.tech.informa.com/om033163/saudi-telecom-company-stc-company-update--2023: 403 Client Error: Forbidden for url: https://omdia.tech.informa.com/om033163/saudi-telecom-company-stc-company-update--2023
+2025-08-30 13:46:03 | WARNING | fetch | fetch failed for https://ace-myhomework.com/knowledgebase/saudi-telecom-company: 403 Client Error: Forbidden for url: https://ace-myhomework.com/knowledgebase/saudi-telecom-company
+2025-08-30 13:46:03 | INFO | fetch | fetched https://dataxis.com/product/actor-profile/stc-television-and-telecom/ chars=51855
+2025-08-30 13:46:20 | INFO | llm | embed batch=42 latency=16.17s
+2025-08-30 13:46:20 | INFO | llm | embed batch=1 latency=0.12s
+2025-08-30 13:46:20 | INFO | orchestrator | enrichment: synthesize stc (Saudi Telecom Company) hits=5
+2025-08-30 13:46:20 | INFO | orchestrator | enrichment built chars=3547
+2025-08-30 13:46:39 | INFO | llm | LLM md_stream total_chars=0 latency=19.55s
+2025-08-30 13:46:39 | INFO | orchestrator | events:research:done company=stc (Saudi Telecom Company) hits=5
+2025-08-30 13:47:36 | INFO | llm | LLM ready=True latency=2.24s
+2025-08-30 13:47:36 | INFO | llm | Embeddings ready=True latency=0.10s
+2025-08-30 13:47:36 | INFO | uvicorn.access | 127.0.0.1:56758 - "GET /api/health HTTP/1.1" 200
+2025-08-30 13:47:38 | INFO | llm | LLM ready=True latency=3.17s
+2025-08-30 13:47:38 | INFO | llm | Embeddings ready=True latency=0.08s
+2025-08-30 13:47:38 | INFO | uvicorn.access | 127.0.0.1:56760 - "GET /api/health HTTP/1.1" 200
+2025-08-30 13:47:46 | INFO | llm | LLM ready=True latency=2.24s
+2025-08-30 13:47:46 | INFO | llm | Embeddings ready=True latency=0.08s
+2025-08-30 13:47:46 | INFO | uvicorn.access | 127.0.0.1:56766 - "GET /api/health HTTP/1.1" 200
+2025-08-30 13:47:48 | INFO | uvicorn.access | 127.0.0.1:56773 - "GET /api/stream/research/c1?online=true HTTP/1.1" 200
+2025-08-30 13:47:48 | INFO | orchestrator | events:research:start company=stc (Saudi Telecom Company) id=c1 online=True
+2025-08-30 13:47:48 | INFO | search | ddgs.text q='site:stc.com.sa customer experience' region=xa-en safe=moderate backend=auto timeout=20s proxy=False
+2025-08-30 13:47:48 | INFO | primp | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Astc.com.sa%20customer%20experience 200
+2025-08-30 13:47:49 | INFO | primp | response: https://www.mojeek.com/search?q=site%3Astc.com.sa+customer+experience 200
+2025-08-30 13:47:49 | INFO | search | ddgs.text -> 5 hits
+2025-08-30 13:47:50 | INFO | fetch | fetched https://www.stc.com.sa/content/stc/sa/en/personal/mobile/other-services.html chars=26915
+2025-08-30 13:47:51 | INFO | fetch | fetched https://www.stc.com.sa/content/stc/sa/en/business/connect.html chars=15897
+2025-08-30 13:47:51 | INFO | fetch | fetched https://www.stc.com.sa/content/stc/sa/en/personal/mobile/packages/sawa-ziyara.html chars=17808
+2025-08-30 13:47:52 | INFO | fetch | fetched https://www.stc.com.sa/content/stc/sa/en/personal/lifestyle.html chars=15208
+2025-08-30 13:47:53 | INFO | fetch | fetched https://www.stc.com.sa/content/stc/sa/en/personal/mobile/self-activation-sim.html chars=16908
+2025-08-30 13:47:53 | INFO | search | ddgs.text q='stc (Saudi Telecom Company) reviews NPS' region=xa-en safe=moderate backend=auto timeout=20s proxy=False
+2025-08-30 13:47:53 | INFO | primp | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stc%20%28Saudi%20Telecom%20Company%29%20reviews%20NPS 200
+2025-08-30 13:47:53 | INFO | primp | response: https://search.yahoo.com/search;_ylt=uR8Anqn2w443RE8TdzFE2mY3;_ylu=usaMov_W5q1JHf_t5Pe_-lsriempwHoe3Qmu1Avz6u_26DU?p=stc+%28Saudi+Telecom+Company%29+reviews+NPS 200
+2025-08-30 13:47:54 | INFO | search | ddgs.text -> 5 hits
+2025-08-30 13:47:54 | WARNING | fetch | fetch failed for https://www.glassdoor.com/Reviews/Saudi-Telecom-Reviews-E40240.htm: 403 Client Error: Forbidden for url: https://www.glassdoor.com/Reviews/Saudi-Telecom-Reviews-E40240.htm
+2025-08-30 13:47:54 | WARNING | fetch | fetch failed for https://www.ambitionbox.com/overview/saudi-telecom-company-overview: 403 Client Error: Forbidden for url: https://www.ambitionbox.com/overview/saudi-telecom-company-overview
+2025-08-30 13:47:55 | INFO | fetch | fetched https://www.trustpilot.com/review/www.stc.com.sa chars=15681
+2025-08-30 13:47:56 | WARNING | fetch | fetch failed for https://za.indeed.com/cmp/Saudi-Telecom-Company-(stc)/reviews?fcountry=ALL: 403 Client Error: Forbidden for url: https://za.indeed.com/cmp/Saudi-Telecom-Company-(stc)/reviews?fcountry=ALL
+2025-08-30 13:47:56 | WARNING | fetch | fetch failed for https://www.glassdoor.com/Overview/Working-at-Saudi-Telecom-EI_IE40240.11,24.htm: 403 Client Error: Forbidden for url: https://www.glassdoor.com/Overview/Working-at-Saudi-Telecom-EI_IE40240.11,24.htm
+2025-08-30 13:47:56 | INFO | search | ddgs.text q='stc (Saudi Telecom Company) support channels' region=xa-en safe=moderate backend=auto timeout=20s proxy=False
+2025-08-30 13:47:56 | INFO | primp | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=stc%20%28Saudi%20Telecom%20Company%29%20support%20channels 200
+2025-08-30 13:47:57 | INFO | primp | response: https://yandex.com/search/site/?text=stc+%28Saudi+Telecom+Company%29+support+channels&web=1&searchid=4438371 200
+2025-08-30 13:47:57 | INFO | search | ddgs.text -> 5 hits
+2025-08-30 13:47:57 | INFO | fetch | fetched https://ksaexpats.com/apn-settings-stc-mobily-zain-friendi-lebara-virgin/ chars=8610
+2025-08-30 13:47:59 | INFO | fetch | fetched https://www.insidemena.com/sa-en/how-to-check-your-stc-sim-number/ chars=7712
+2025-08-30 13:47:59 | WARNING | fetch | fetch failed for https://ohayu.com/blog/best-mobile-networks-saudi-arabia/: 403 Client Error: Forbidden for url: https://ohayu.com/blog/best-mobile-networks-saudi-arabia/
+2025-08-30 13:47:59 | INFO | fetch | fetched https://saudiarabiaesim.com/operators/ chars=10468
+2025-08-30 13:48:01 | INFO | fetch | fetched https://www.expatica.com/sa/living/household/mobile-phones-in-saudi-arabia-73029/ chars=14394
+2025-08-30 13:48:25 | INFO | llm | embed batch=60 latency=24.01s
+2025-08-30 13:48:25 | INFO | llm | embed batch=1 latency=0.12s
+2025-08-30 13:48:25 | INFO | orchestrator | enrichment: synthesize stc (Saudi Telecom Company) hits=5
+2025-08-30 13:48:25 | INFO | orchestrator | enrichment built chars=3572
+2025-08-30 13:48:48 | INFO | llm | LLM md_stream total_chars=0 latency=22.21s
+2025-08-30 13:48:48 | INFO | orchestrator | events:research:done company=stc (Saudi Telecom Company) hits=5
+2025-08-30 13:49:00 | INFO | llm | LLM ready=True latency=2.31s
+2025-08-30 13:49:01 | INFO | llm | Embeddings ready=True latency=0.09s
+2025-08-30 13:49:01 | INFO | uvicorn.access | 127.0.0.1:51821 - "GET /api/health HTTP/1.1" 200
+2025-08-30 13:49:03 | INFO | uvicorn.access | 127.0.0.1:51825 - "GET /api/stream/outreach/c1/preview?online=true&bypass=true HTTP/1.1" 200
+2025-08-30 13:49:03 | INFO | orchestrator | people: websearch for stc (Saudi Telecom Company)
+2025-08-30 13:49:03 | INFO | search | ddgs.text q='site:linkedin.com ("Head of Customer Experience" OR "Customer Experience Director" OR "Chief Customer Officer" OR "VP Customer Experience" OR "CX Lead") stc (Saudi Telecom Company)' region=xa-en safe=moderate backend=auto timeout=20s proxy=False
+2025-08-30 13:49:04 | INFO | primp | response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=site%3Alinkedin.com%20%28%22Head%20of%20Customer%20Experience%22%20OR%20%22Customer%20Experience%20Director%22%20OR%20%22Chief%20Customer%20Officer%22%20OR%20%22VP%20Customer%20Experience%22%20OR%20%22CX%20Lead%22%29%20stc%20%28Saudi%20Telecom%20Company%29 200
+2025-08-30 13:49:04 | INFO | primp | response: https://yandex.com/search/site/?text=site%3Alinkedin.com+%28%22Head+of+Customer+Experience%22+OR+%22Customer+Experience+Director%22+OR+%22Chief+Customer+Officer%22+OR+%22VP+Customer+Experience%22+OR+%22CX+Lead%22%29+stc+%28Saudi+Telecom+Company%29&web=1&searchid=5905891 200
+2025-08-30 13:49:05 | INFO | primp | response: https://www.bing.com/search?q=site%3Alinkedin.com+%28%22Head+of+Customer+Experience%22+OR+%22Customer+Experience+Director%22+OR+%22Chief+Customer+Officer%22+OR+%22VP+Customer+Experience%22+OR+%22CX+Lead%22%29+stc+%28Saudi+Telecom+Company%29&pq=site%3Alinkedin.com+%28%22Head+of+Customer+Experience%22+OR+%22Customer+Experience+Director%22+OR+%22Chief+Customer+Officer%22+OR+%22VP+Customer+Experience%22+OR+%22CX+Lead%22%29+stc+%28Saudi+Telecom+Company%29&cc=en 200
+2025-08-30 13:49:06 | INFO | primp | response: https://search.yahoo.com/search;_ylt=OkqBfn_RQbk_j-zFlTRtgYyU;_ylu=_-ffU3F55q29eg7Vu6maFE_SLvrV-BWhd9B4pPTI_FOs8M0?p=site%3Alinkedin.com+%28%22Head+of+Customer+Experience%22+OR+%22Customer+Experience+Director%22+OR+%22Chief+Customer+Officer%22+OR+%22VP+Customer+Experience%22+OR+%22CX+Lead%22%29+stc+%28Saudi+Telecom+Company%29 200
+2025-08-30 13:49:07 | INFO | primp | response: https://www.mojeek.com/search?q=site%3Alinkedin.com+%28%22Head+of+Customer+Experience%22+OR+%22Customer+Experience+Director%22+OR+%22Chief+Customer+Officer%22+OR+%22VP+Customer+Experience%22+OR+%22CX+Lead%22%29+stc+%28Saudi+Telecom+Company%29 403
+2025-08-30 13:49:08 | INFO | primp | response: https://www.google.com/search?q=site%3Alinkedin.com+%28%22Head+of+Customer+Experience%22+OR+%22Customer+Experience+Director%22+OR+%22Chief+Customer+Officer%22+OR+%22VP+Customer+Experience%22+OR+%22CX+Lead%22%29+stc+%28Saudi+Telecom+Company%29&filter=1&start=0&asearch=arc&async=arc_id%3Asrp_3p9EnxfZhEX8U0eFKe-83Vc_100%2Cuse_ac%3Atrue%2C_fmt%3Aprog&ie=UTF-8&oe=UTF-8&hl=en-XA&lr=lang_en&cr=countryXA 200
+2025-08-30 13:49:08 | INFO | search | ddgs.text -> 8 hits
+2025-08-30 13:49:08 | ERROR | uvicorn.error | Exception in ASGI application
+  + Exception Group Traceback (most recent call last):
+  |   File "D:\Lucidiya\.venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 409, in run_asgi
+  |     result = await app(  # type: ignore[func-returns-value]
+  |   File "D:\Lucidiya\.venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 60, in __call__
+  |     return await self.app(scope, receive, send)
+  |   File "D:\Lucidiya\.venv\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+  |     await super().__call__(scope, receive, send)
+  |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\applications.py", line 113, in __call__
+  |     await self.middleware_stack(scope, receive, send)
+  |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+  |     raise exc
+  |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+  |     await self.app(scope, receive, _send)
+  |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+  |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+  |     raise exc
+  |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+  |     await app(scope, receive, sender)
+  |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\routing.py", line 716, in __call__
+  |     await self.middleware_stack(scope, receive, send)
+  |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\routing.py", line 736, in app
+  |     await route.handle(scope, receive, send)
+  |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\routing.py", line 290, in handle
+  |     await self.app(scope, receive, send)
+  |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\routing.py", line 78, in app
+  |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+  |     raise exc
+  |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+  |     await app(scope, receive, sender)
+  |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\routing.py", line 76, in app
+  |     await response(scope, receive, send)
+  |   File "D:\Lucidiya\.venv\lib\site-packages\sse_starlette\sse.py", line 255, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "D:\Lucidiya\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 772, in __aexit__
+  |     raise BaseExceptionGroup(
+  | exceptiongroup.ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "D:\Lucidiya\.venv\lib\site-packages\sse_starlette\sse.py", line 258, in cancel_on_finish
+    |     await coro()
+    |   File "D:\Lucidiya\.venv\lib\site-packages\sse_starlette\sse.py", line 177, in _stream_response
+    |     async for data in self.body_iterator:
+    |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\concurrency.py", line 61, in iterate_in_threadpool
+    |     yield await anyio.to_thread.run_sync(_next, as_iterator)
+    |   File "D:\Lucidiya\.venv\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    |     return await get_async_backend().run_sync_in_worker_thread(
+    |   File "D:\Lucidiya\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2476, in run_sync_in_worker_thread
+    |     return await future
+    |   File "D:\Lucidiya\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 967, in run
+    |     result = context.run(func, *args)
+    |   File "D:\Lucidiya\.venv\lib\site-packages\starlette\concurrency.py", line 50, in _next
+    |     return next(iterator)
+    |   File "D:\Lucidiya\app\main.py", line 129, in gen
+    |     for ev in orch.preview_outreach_company_events(company_id, bypass_compliance=bypass):
+    |   File "D:\Lucidiya\app\services\orchestrator.py", line 125, in preview_outreach_company_events
+    |     contacts = self.people.suggest(c, online=use_online)
+    |   File "D:\Lucidiya\app\agents\people.py", line 60, in suggest
+    |     people.append(Person(name=name, role=role, email=email))
+    | TypeError: Person.__init__() missing 2 required positional arguments: 'id' and 'seniority'
+    +------------------------------------
+2025-08-30 13:49:24 | INFO | uvicorn.error | Shutting down
+2025-08-30 13:49:24 | INFO | uvicorn.error | Waiting for application shutdown.
+2025-08-30 13:49:24 | INFO | uvicorn.error | Application shutdown complete.
+2025-08-30 13:49:24 | INFO | uvicorn.error | Finished server process [17564]
+2025-08-30 13:49:27 | INFO | vectorstore | vectorstore: PG not configured; using in-memory store
+2025-08-30 13:49:27 | INFO | uvicorn.error | Started server process [332]
+2025-08-30 13:49:27 | INFO | uvicorn.error | Waiting for application startup.
+2025-08-30 13:49:29 | INFO | llm | LLM ready=True latency=2.42s
+2025-08-30 13:49:29 | INFO | llm | Embeddings ready=True latency=0.05s
+2025-08-30 13:49:29 | INFO | uvicorn.error | Startup OK | online_search=True | vector_store=memory
+2025-08-30 13:49:29 | INFO | uvicorn.error | Application startup complete.
+2025-08-30 13:49:37 | INFO | llm | LLM ready=True latency=2.38s
+2025-08-30 13:49:37 | INFO | llm | Embeddings ready=True latency=0.07s
+2025-08-30 13:49:37 | INFO | uvicorn.access | 127.0.0.1:52985 - "GET /api/health HTTP/1.1" 200
+2025-08-30 13:51:10 | INFO | uvicorn.error | Shutting down
+2025-08-30 13:51:10 | INFO | uvicorn.error | Waiting for application shutdown.
+2025-08-30 13:51:10 | INFO | uvicorn.error | Application shutdown complete.
+2025-08-30 13:51:10 | INFO | uvicorn.error | Finished server process [332]
+2025-08-30 13:51:11 | INFO | vectorstore | vectorstore: PG not configured; using in-memory store
+2025-08-30 13:51:11 | INFO | uvicorn.error | Started server process [16288]
+2025-08-30 13:51:11 | INFO | uvicorn.error | Waiting for application startup.
+2025-08-30 13:51:12 | INFO | llm | LLM ready=True latency=1.52s
+2025-08-30 13:51:12 | INFO | llm | Embeddings ready=True latency=0.03s
+2025-08-30 13:51:12 | INFO | uvicorn.error | Startup OK | online_search=True | vector_store=memory
+2025-08-30 13:51:12 | INFO | uvicorn.error | Application startup complete.
+2025-08-30 13:52:21 | INFO | uvicorn.error | Shutting down
+2025-08-30 13:52:21 | INFO | uvicorn.error | Waiting for application shutdown.
+2025-08-30 13:52:21 | INFO | uvicorn.error | Application shutdown complete.
+2025-08-30 13:52:21 | INFO | uvicorn.error | Finished server process [16288]
+2025-08-30 13:52:22 | INFO | vectorstore | vectorstore: PG not configured; using in-memory store
+2025-08-30 13:52:22 | INFO | uvicorn.error | Started server process [26036]
+2025-08-30 13:52:22 | INFO | uvicorn.error | Waiting for application startup.
+2025-08-30 13:52:23 | INFO | llm | LLM ready=True latency=1.35s
+2025-08-30 13:52:23 | INFO | llm | Embeddings ready=True latency=0.04s
+2025-08-30 13:52:23 | INFO | uvicorn.error | Startup OK | online_search=True | vector_store=memory
+2025-08-30 13:52:23 | INFO | uvicorn.error | Application startup complete.
+2025-08-30 13:53:55 | INFO | uvicorn.error | Shutting down
+2025-08-30 13:53:55 | INFO | uvicorn.error | Waiting for application shutdown.
+2025-08-30 13:53:55 | INFO | uvicorn.error | Application shutdown complete.
+2025-08-30 13:53:55 | INFO | uvicorn.error | Finished server process [26036]
+2025-08-30 13:53:56 | INFO | vectorstore | vectorstore: PG not configured; using in-memory store
+2025-08-30 13:53:56 | INFO | uvicorn.error | Started server process [25768]
+2025-08-30 13:53:56 | INFO | uvicorn.error | Waiting for application startup.
+2025-08-30 13:53:58 | INFO | llm | LLM ready=True latency=1.46s
+2025-08-30 13:53:58 | INFO | llm | Embeddings ready=True latency=0.04s
+2025-08-30 13:53:58 | INFO | uvicorn.error | Startup OK | online_search=True | vector_store=memory
+2025-08-30 13:53:58 | INFO | uvicorn.error | Application startup complete.
+2025-08-30 13:56:53 | INFO | uvicorn.error | Shutting down
+2025-08-30 13:56:53 | INFO | uvicorn.error | Waiting for application shutdown.
+2025-08-30 13:56:53 | INFO | uvicorn.error | Application shutdown complete.
+2025-08-30 13:56:53 | INFO | uvicorn.error | Finished server process [25768]
