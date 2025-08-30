@@ -50,7 +50,8 @@ Format: 3-5 bullets, each starting with "•". Be specific and actionable."""
                 json={
                     "model": MODEL_NAME,
                     "prompt": summary_prompt,
-                    "stream": True
+                    "stream": True,
+                    "think": False
                 }
             ) as response:
                 async for line in response.content:
@@ -69,20 +70,38 @@ Format: 3-5 bullets, each starting with "•". Be specific and actionable."""
                             continue
         
         # Generate email
+        # Derive a greeting hint from the first contact, if available
+        greeting_name = None
+        if prospect.contacts:
+            try:
+                greeting_name = (prospect.contacts[0].name or "").split()[0] or None
+            except Exception:
+                greeting_name = None
+
+        greeting_hint = (
+            f"Use this greeting exactly: 'Hi {greeting_name},'" if greeting_name else "Use this greeting exactly: 'Hi there,'"
+        )
+
         email_prompt = f"""{context}
 
-Write a personalized outreach email to the head of customer experience.
-Requirements:
-- Subject line (brief and compelling)
-- Body: 150-180 words
-- Professional but friendly tone
-- Focus on their specific industry challenges
-- One clear call-to-action
-- No exaggerated claims
+You are writing on behalf of Lucidya, a customer experience analytics platform.
+The email is from Lucidya to leaders at {prospect.company.name} and should clearly show how Lucidya can help address the pains and facts above.
 
-Format response as:
+{greeting_hint}
+
+Requirements:
+- Subject line: brief, compelling, references their context or outcomes
+- Body: 150–180 words, professional and friendly
+- Clearly connect their pains/facts to Lucidya capabilities (e.g., omnichannel feedback, AI-driven sentiment/topics, dashboards, actionable insights)
+- Be specific without unverifiable claims; avoid guarantees or inflated numbers
+- One clear call-to-action to schedule a short 20–30 minute conversation or demo next week
+- Keep it practical and value-focused; no fluff
+- Signature: 'The Lucidya Team' (do not invent a personal name)
+
+Format response exactly as:
 Subject: [subject line]
-Body: [email body]"""
+Body: [email body]
+"""
         
         email_text = ""
         
@@ -92,7 +111,8 @@ Body: [email body]"""
                 json={
                     "model": MODEL_NAME,
                     "prompt": email_prompt,
-                    "stream": True
+                    "stream": True,
+                    "think": False
                 }
             ) as response:
                 async for line in response.content:
