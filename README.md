@@ -14,8 +14,8 @@ A production-oriented multi-agent customer experience (CX) research and outreach
 
 1. **Clone and enter directory:**
 ```bash
-git clone <repo>
-cd lucidya_mcp_prototype
+git clone https://github.com/muzakkirhussain011/Lucidya_MCP_Prototype
+cd Lucidya_MCP_Prototype
 ```
 
 2. **Create virtual environment:**
