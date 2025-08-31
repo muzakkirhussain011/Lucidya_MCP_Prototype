@@ -40,9 +40,13 @@ class StoreServer:
         if path.exists():
             try:
                 with open(path) as f:
-                    return json.load(f)
-            except:
-                pass
+                    content = json.load(f)
+                    # Return empty list if content is None or not a list/dict
+                    if content is None:
+                        return default
+                    return content
+            except (json.JSONDecodeError, IOError):
+                return default
         return default
     
     def _save_json(self, path, data):
@@ -117,36 +121,59 @@ class StoreServer:
             
             elif method == "store.save_fact":
                 fact = params["fact"]
-                self.facts.append(fact)
-                self._save_json(self.facts_file, self.facts)
+                # Check if fact already exists by ID
+                existing_ids = {f.get("id") for f in self.facts if f.get("id")}
+                if fact.get("id") not in existing_ids:
+                    self.facts.append(fact)
+                    self._save_json(self.facts_file, self.facts)
                 return web.json_response({"result": "saved"})
             
             elif method == "store.save_contact":
                 contact = params["contact"]
-                self.contacts.append(contact)
-                self._save_json(self.contacts_file, self.contacts)
+                # Check if contact already exists by ID
+                existing_ids = {c.get("id") for c in self.contacts if c.get("id")}
+                if contact.get("id") not in existing_ids:
+                    self.contacts.append(contact)
+                    self._save_json(self.contacts_file, self.contacts)
                 return web.json_response({"result": "saved"})
             
             elif method == "store.list_contacts_by_domain":
                 domain = params["domain"]
-                results = [
-                    c for c in self.contacts
-                    if c["email"].endswith(f"@{domain}")
-                ]
+                # Ensure contacts is a list
+                if not isinstance(self.contacts, list):
+                    self.contacts = []
+                
+                results = []
+                for c in self.contacts:
+                    # Ensure contact has email field
+                    if isinstance(c, dict) and "email" in c:
+                        email = c["email"]
+                        # Check if email ends with the domain
+                        if email.endswith(f"@{domain}"):
+                            results.append(c)
+                
                 return web.json_response({"result": results})
             
             elif method == "store.check_suppression":
                 supp_type = params["type"]
                 value = params["value"]
                 
+                # Ensure suppressions is a list
+                if not isinstance(self.suppressions, list):
+                    self.suppressions = []
+                
                 for supp in self.suppressions:
-                    if supp["type"] == supp_type and supp["value"] == value:
-                        # Check expiry
-                        if supp.get("expires_at"):
-                            expires = datetime.fromisoformat(supp["expires_at"])
-                            if expires < datetime.utcnow():
-                                continue
-                        return web.json_response({"result": True})
+                    if isinstance(supp, dict):
+                        if supp.get("type") == supp_type and supp.get("value") == value:
+                            # Check expiry
+                            if supp.get("expires_at"):
+                                try:
+                                    expires = datetime.fromisoformat(supp["expires_at"].replace("Z", "+00:00"))
+                                    if expires < datetime.utcnow():
+                                        continue
+                                except:
+                                    pass
+                            return web.json_response({"result": True})
                 
                 return web.json_response({"result": False})
             
@@ -171,7 +198,7 @@ class StoreServer:
                 
                 return web.json_response({"result": "cleared"})
         
-        return web.json_response({"error": "Unknown method"}, status=400)
+        return web.json_response({"error": f"Unknown method: {method}"}, status=400)
 
 app = web.Application()
 server = StoreServer()

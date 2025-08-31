@@ -1,0 +1,56 @@
+[
+  {
+    "id": "acme",
+    "name": "Acme Corporation",
+    "domain": "acme.com",
+    "industry": "SaaS",
+    "size": 500,
+    "pains": [
+      "Low NPS scores in enterprise segment",
+      "Customer churn increasing 15% YoY",
+      "Support ticket volume overwhelming team",
+      "No unified view of customer journey"
+    ],
+    "notes": [
+      "Recently raised Series C funding",
+      "Expanding into European market",
+      "Current support stack is fragmented"
+    ]
+  },
+  {
+    "id": "techcorp",
+    "name": "TechCorp Industries",
+    "domain": "techcorp.io",
+    "industry": "FinTech",
+    "size": 1200,
+    "pains": [
+      "Regulatory compliance for customer communications",
+      "Multi-channel support inconsistency",
+      "Customer onboarding takes too long",
+      "Poor personalization in customer interactions"
+    ],
+    "notes": [
+      "IPO planned for next year",
+      "Heavy investment in AI initiatives",
+      "Customer base growing 40% annually"
+    ]
+  },
+  {
+    "id": "retailplus",
+    "name": "RetailPlus",
+    "domain": "retailplus.com",
+    "industry": "E-commerce",
+    "size": 300,
+    "pains": [
+      "Seasonal support spikes unmanageable",
+      "Customer retention below industry average",
+      "No proactive customer engagement",
+      "Reviews and feedback not actionable"
+    ],
+    "notes": [
+      "Omnichannel retail strategy",
+      "Looking to improve post-purchase experience",
+      "Current NPS score is 42"
+    ]
+  }
+]

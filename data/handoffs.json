@@ -1,0 +1,158 @@
+[
+  {
+    "prospect": {
+      "id": "acme",
+      "company": {
+        "id": "acme",
+        "name": "Acme Corporation",
+        "domain": "acme.com",
+        "industry": "SaaS",
+        "size": 500,
+        "pains": [
+          "Low NPS scores in enterprise segment",
+          "Customer churn increasing 15% YoY",
+          "Support ticket volume overwhelming team",
+          "No unified view of customer journey"
+        ],
+        "notes": [
+          "Recently raised Series C funding",
+          "Expanding into European market",
+          "Current support stack is fragmented"
+        ]
+      },
+      "contacts": [
+        {
+          "id": "e92f6392-433c-4663-9995-fa7e6bfe46ea",
+          "name": "VP Customer Experience at Acme Corporation",
+          "email": "vp.customer.experien@acme.com",
+          "title": "VP Customer Experience",
+          "prospect_id": "acme"
+        },
+        {
+          "id": "827e97ae-b9d2-4b04-9df4-3dbfd0f6d7e7",
+          "name": "Director of CX at Acme Corporation",
+          "email": "director@acme.com",
+          "title": "Director of CX",
+          "prospect_id": "acme"
+        }
+      ],
+      "facts": [
+        {
+          "id": "32cc6a76-a9de-4314-a3a0-11690380a6e9",
+          "source": "Industry Report 2024",
+          "text": "Found that Acme Corporation customer experience is a critical priority for modern businesses",
+          "collected_at": "2025-08-31T03:01:57.521033",
+          "ttl_hours": 168,
+          "confidence": 0.85,
+          "company_id": "acme"
+        },
+        {
+          "id": "6eeb0846-627c-4ba5-b9c0-9658675ee2ad",
+          "source": "CX Weekly",
+          "text": "Best practices for Acme Corporation customer experience include automation and personalization",
+          "collected_at": "2025-08-31T03:01:57.524700",
+          "ttl_hours": 168,
+          "confidence": 0.75,
+          "company_id": "acme"
+        },
+        {
+          "id": "f47eafd3-98b2-429d-ab7e-b8bf303a342b",
+          "source": "Industry Report 2024",
+          "text": "Found that Acme Corporation SaaS challenges is a critical priority for modern businesses",
+          "collected_at": "2025-08-31T03:01:57.530691",
+          "ttl_hours": 168,
+          "confidence": 0.85,
+          "company_id": "acme"
+        },
+        {
+          "id": "e4549fd8-411e-4f8f-ae0d-1ab080e69066",
+          "source": "CX Weekly",
+          "text": "Best practices for Acme Corporation SaaS challenges include automation and personalization",
+          "collected_at": "2025-08-31T03:01:57.536376",
+          "ttl_hours": 168,
+          "confidence": 0.75,
+          "company_id": "acme"
+        },
+        {
+          "id": "9d07f047-ed83-4ba8-88ec-dcc97b94f1b6",
+          "source": "Industry Report 2024",
+          "text": "Found that acme.com support contact is a critical priority for modern businesses",
+          "collected_at": "2025-08-31T03:01:57.543371",
+          "ttl_hours": 168,
+          "confidence": 0.85,
+          "company_id": "acme"
+        },
+        {
+          "id": "07eab38c-1456-418b-8289-d404bbc46ee5",
+          "source": "CX Weekly",
+          "text": "Best practices for acme.com support contact include automation and personalization",
+          "collected_at": "2025-08-31T03:01:57.548381",
+          "ttl_hours": 168,
+          "confidence": 0.75,
+          "company_id": "acme"
+        },
+        {
+          "id": "856ae6d4-2e9d-4b3d-afa8-b88b0ef75d96",
+          "source": "seed_data",
+          "text": "Known pain point: Low NPS scores in enterprise segment",
+          "collected_at": "2025-08-31T03:01:57.553753",
+          "ttl_hours": 336,
+          "confidence": 0.9,
+          "company_id": "acme"
+        },
+        {
+          "id": "e2c28fcb-f34e-45e4-9704-888c0a32880b",
+          "source": "seed_data",
+          "text": "Known pain point: Customer churn increasing 15% YoY",
+          "collected_at": "2025-08-31T03:01:57.561018",
+          "ttl_hours": 336,
+          "confidence": 0.9,
+          "company_id": "acme"
+        },
+        {
+          "id": "8d09df96-b9f6-4e2f-9f33-3ce391fecd53",
+          "source": "seed_data",
+          "text": "Known pain point: Support ticket volume overwhelming team",
+          "collected_at": "2025-08-31T03:01:57.564413",
+          "ttl_hours": 336,
+          "confidence": 0.9,
+          "company_id": "acme"
+        },
+        {
+          "id": "62cab810-dd7e-4704-8c88-4943a18c7fb3",
+          "source": "seed_data",
+          "text": "Known pain point: No unified view of customer journey",
+          "collected_at": "2025-08-31T03:01:57.568516",
+          "ttl_hours": 336,
+          "confidence": 0.9,
+          "company_id": "acme"
+        }
+      ],
+      "fit_score": 0.868,
+      "status": "sequenced",
+      "dropped_reason": null,
+      "summary": "**Acme Corporation (SaaS, 500 employees)**\n\n\u2022 **Company Overview**  \n\u2022 **Industry**: SaaS  \n\u2022 **Size**: 500 employees  \n\n\u2022 **Main Challenges**  \n\u2022 Low NPS scores in enterprise segment (confidence: 0.79)  \n\u2022 Customer churn increasing 15% YoY  \n\u2022 Support ticket volume overwhelming (confidence: 0.64)  \n\u2022 No unified view of customer journey  \n\n\u2022 **Specific Opportunities for Improvement**  \n\u2022 Improve customer onboarding experience  \n\u2022 Streamline support ticket processing  \n\u2022 Enhance customer journey analytics tools  \n\u2022 Implement unified customer journey tracking system  \n\n\u2022 **Recommended Actions**  \n\u2022 Conduct customer feedback surveys to improve NPS scores  \n\u2022 Automate support ticket processing to reduce delays  \n\u2022 Integrate customer journey analytics tools to identify pain points  \n\u2022 Train team members on unified customer journey tracking systems",
+      "email_draft": {
+        "subject": "Transform Acme Corporation's Customer Experience",
+        "body": "---\n\n**Subject:** Lucidya | SaaS | 500 Employees \u2013 Enhancing Customer Experience  \n\nDear [Leader's Name],  \n\nWe\u2019re excited to share that **Acme Corporation**, a SaaS company with 500 employees, is looking to improve its customer experience and business outcomes. We\u2019re currently facing challenges that could have a significant impact on the company\u2019s success, and we\u2019re confident that Lucidya\u2019s capabilities can help address these issues.  \n\n**Our Challenges:**  \n- **Low NPS scores** in the enterprise segment (confidence: 0.79)  \n- **Customer churn increasing 15% YoY**  \n- **Support ticket volume overwhelmed**  \n- **No unified view of the customer journey**  \n\nThese challenges highlight a need for **unified customer journey tracking tools** and **streamlined support processes**. Lucidya is a leader in SaaS-driven customer experience, and we can help improve these aspects by offering **unified customer journey analytics tools** and **automated support systems**.  \n\nWe\u2019d love to schedule a short conversation or demo to discuss how we can support Acme Corporation in transforming its customer experience. Our team is here to help you make informed decisions that drive business growth.  \n\nThank you for your time and consideration.  \n\nBest regards,  \n**The Lucidya Team**  \n\n---\n\n---\nLucidya LLC\nPrince Turki Bin Abdulaziz Al Awwal Rd\nAl Mohammadiyyah, Riyadh 12362\nSaudi Arabia\n\nThis email was sent by Lucidya's AI-powered outreach system.\nTo opt out of future communications, click here: https://lucidya.com/unsubscribe\n"
+      },
+      "thread_id": "mock-thread-64baa331-9a4e-4147-9275-8109842b8aea"
+    },
+    "thread": null,
+    "calendar_slots": [
+      {
+        "start_iso": "2025-09-02T17:02:23.250923",
+        "end_iso": "2025-09-02T17:32:23.250923"
+      },
+      {
+        "start_iso": "2025-09-03T17:02:23.250923",
+        "end_iso": "2025-09-03T17:32:23.250923"
+      },
+      {
+        "start_iso": "2025-09-05T17:02:23.250923",
+        "end_iso": "2025-09-05T17:32:23.250923"
+      }
+    ],
+    "generated_at": "2025-08-31T03:02:23.252923"
+  }
+]

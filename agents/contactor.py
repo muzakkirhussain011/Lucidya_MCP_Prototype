@@ -43,16 +43,32 @@ class Contactor:
             seen_emails.add(contact.email.lower())
         
         for title in titles:
-            # Generate email
-            email_prefix = title.lower().replace(" ", ".").replace("of", "")[:20]
+            # Generate email - Fixed logic to create valid emails
+            # Remove special characters and spaces for email prefix
+            email_prefix = title.lower().replace(" ", ".").replace("of", "")
+            # Remove any remaining special characters
+            email_prefix = "".join(c for c in email_prefix if c.isalnum() or c == '.')
+            # Ensure it doesn't start or end with a dot
+            email_prefix = email_prefix.strip('.')
+            # Limit length
+            email_prefix = email_prefix[:20]
+            
+            # Create the email
             email = f"{email_prefix}@{prospect.company.domain}"
             
             # Validate
             try:
-                validated = validate_email(email)
-                email = validated.email
-            except EmailNotValidError:
-                continue
+                validated = validate_email(email, check_deliverability=False)
+                email = validated.normalized
+            except EmailNotValidError as e:
+                # If validation fails, create a simpler email
+                simple_prefix = title.split()[0].lower()
+                email = f"{simple_prefix}@{prospect.company.domain}"
+                try:
+                    validated = validate_email(email, check_deliverability=False)
+                    email = validated.normalized
+                except:
+                    continue
             
             # Dedupe
             if email.lower() in seen_emails:

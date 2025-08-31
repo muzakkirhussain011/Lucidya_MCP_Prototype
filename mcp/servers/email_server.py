@@ -25,10 +25,13 @@ class EmailServer:
             thread_id = str(uuid.uuid4())
             message_id = str(uuid.uuid4())
             
+            # Get prospect_id from params, default to "unknown" if not provided
+            prospect_id = params.get("prospect_id", "unknown")
+            
             message = {
                 "id": message_id,
                 "thread_id": thread_id,
-                "prospect_id": params.get("prospect_id", "unknown"),
+                "prospect_id": prospect_id,
                 "direction": "outbound",
                 "to": params["to"],
                 "subject": params["subject"],
@@ -39,13 +42,18 @@ class EmailServer:
             self.messages.append(message)
             
             if thread_id not in self.threads:
-                self.threads[thread_id] = []
-            self.threads[thread_id].append(message)
+                self.threads[thread_id] = {
+                    "id": thread_id,
+                    "prospect_id": prospect_id,
+                    "messages": []
+                }
+            self.threads[thread_id]["messages"].append(message)
             
             return web.json_response({
                 "result": {
                     "thread_id": thread_id,
-                    "message_id": message_id
+                    "message_id": message_id,
+                    "prospect_id": prospect_id
                 }
             })
         
@@ -53,6 +61,17 @@ class EmailServer:
             prospect_id = params.get("prospect_id")
             
             # Find thread for prospect
+            for thread_id, thread_data in self.threads.items():
+                if thread_data.get("prospect_id") == prospect_id:
+                    return web.json_response({
+                        "result": {
+                            "id": thread_id,
+                            "prospect_id": prospect_id,
+                            "messages": thread_data["messages"]
+                        }
+                    })
+            
+            # Fallback to searching messages
             prospect_messages = [
                 m for m in self.messages 
                 if m.get("prospect_id") == prospect_id
