@@ -2,6 +2,7 @@
 from email_validator import validate_email, EmailNotValidError
 from app.schema import Prospect, Contact
 import uuid
+import re
 
 class Contactor:
     """Generates and validates contacts with deduplication"""
@@ -42,33 +43,40 @@ class Contactor:
         for contact in existing:
             seen_emails.add(contact.email.lower())
         
-        for title in titles:
-            # Generate email - Fixed logic to create valid emails
-            # Remove special characters and spaces for email prefix
-            email_prefix = title.lower().replace(" ", ".").replace("of", "")
-            # Remove any remaining special characters
-            email_prefix = "".join(c for c in email_prefix if c.isalnum() or c == '.')
-            # Ensure it doesn't start or end with a dot
-            email_prefix = email_prefix.strip('.')
-            # Limit length
-            email_prefix = email_prefix[:20]
-            
-            # Create the email
-            email = f"{email_prefix}@{prospect.company.domain}"
-            
-            # Validate
+        # Mock names per title to avoid placeholders
+        name_pool = {
+            "CEO": ["Emma Johnson", "Michael Chen", "Ava Thompson", "Liam Garcia"],
+            "Head of Customer Success": ["Daniel Kim", "Priya Singh", "Ethan Brown", "Maya Davis"],
+            "VP Customer Experience": ["Olivia Martinez", "Noah Patel", "Sophia Lee", "Jackson Rivera"],
+            "Director of CX": ["Henry Walker", "Isabella Nguyen", "Lucas Adams", "Chloe Wilson"],
+            "Chief Customer Officer": ["Amelia Clark", "James Wright", "Mila Turner", "Benjamin Scott"],
+            "SVP Customer Success": ["Charlotte King", "William Brooks", "Zoe Parker", "Logan Hughes"],
+            "VP CX Analytics": ["Harper Bell", "Elijah Foster", "Layla Reed", "Oliver Evans"],
+        }
+
+        def pick_name(title: str) -> str:
+            pool = name_pool.get(title, ["Alex Morgan"])  # fallback
+            # Stable index by company id + title
+            key = f"{prospect.company.id}:{title}"
+            idx = sum(ord(c) for c in key) % len(pool)
+            return pool[idx]
+
+        def email_from_name(name: str, domain: str) -> str:
+            parts = re.sub(r"[^a-zA-Z\s]", "", name).strip().lower().split()
+            if len(parts) >= 2:
+                prefix = f"{parts[0]}.{parts[-1]}"
+            else:
+                prefix = parts[0]
+            email = f"{prefix}@{domain}"
             try:
-                validated = validate_email(email, check_deliverability=False)
-                email = validated.normalized
-            except EmailNotValidError as e:
-                # If validation fails, create a simpler email
-                simple_prefix = title.split()[0].lower()
-                email = f"{simple_prefix}@{prospect.company.domain}"
-                try:
-                    validated = validate_email(email, check_deliverability=False)
-                    email = validated.normalized
-                except:
-                    continue
+                return validate_email(email, check_deliverability=False).normalized
+            except EmailNotValidError:
+                return f"contact@{domain}"
+
+        for title in titles:
+            # Create mock contact
+            full_name = pick_name(title)
+            email = email_from_name(full_name, prospect.company.domain)
             
             # Dedupe
             if email.lower() in seen_emails:
@@ -76,10 +84,10 @@ class Contactor:
             
             contact = Contact(
                 id=str(uuid.uuid4()),
-                name=f"{title} at {prospect.company.name}",
+                name=full_name,
                 email=email,
                 title=title,
-                prospect_id=prospect.id
+                prospect_id=prospect.id,
             )
             
             contacts.append(contact)

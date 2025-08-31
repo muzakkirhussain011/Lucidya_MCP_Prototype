@@ -1,5 +1,6 @@
 # file: agents/writer.py
 import json
+import re
 import aiohttp
 from typing import AsyncGenerator
 from app.schema import Prospect
@@ -107,12 +108,20 @@ Include the industry and size context in your summary."""
                 yield log_event("writer", f"Summary generation failed, using default: {e}", "llm_error")
         
         # Generate personalized email
+        # If we have a contact, instruct the greeting explicitly
+        greeting_hint = ""
+        if prospect.contacts:
+            first = (prospect.contacts[0].name or "").split()[0]
+            if first:
+                greeting_hint = f"Use this greeting exactly at the start: 'Hi {first},'\n"
+
         email_prompt = f"""{context}
 
 Company Summary:
 {summary_text}
 
 Write a personalized outreach email from Lucidya to leaders at {prospect.company.name}.
+{greeting_hint}
 Requirements:
 - Subject line that mentions their company name and industry
 - Body: 150-180 words, professional and friendly
@@ -203,7 +212,15 @@ We'd like to discuss how our platform can help address your specific challenges 
 
 Best regards,
 Lucidya Team"""
-        
+
+        # Replace any placeholder tokens like [Team Name] with actual contact name if available
+        if prospect.contacts:
+            contact_name = prospect.contacts[0].name
+            if email_parts.get("subject"):
+                email_parts["subject"] = re.sub(r"\[[^\]]+\]", contact_name, email_parts["subject"])
+            if email_parts.get("body"):
+                email_parts["body"] = re.sub(r"\[[^\]]+\]", contact_name, email_parts["body"])
+
         # Update prospect
         prospect.summary = f"**{prospect.company.name} ({prospect.company.industry}, {prospect.company.size} employees)**\n\n{summary_text}"
         prospect.email_draft = email_parts
