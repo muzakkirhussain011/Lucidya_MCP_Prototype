@@ -173,7 +173,7 @@ pytest tests/ -v
 Key test coverage:
 - `test_dedupe.py`: Email and domain deduplication
 - `test_compliance.py`: Footer insertion, suppression, policy enforcement
-- `test_pipeline.py`: Full pipeline with mocked Ollama streaming
+- `test_pipeline.py`: Full pipeline
 
 ## 📁 Data Files
 
