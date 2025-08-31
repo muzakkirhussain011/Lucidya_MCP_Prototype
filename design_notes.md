@@ -36,9 +36,8 @@ Real-time streaming provides:
 - **Cancellation**: Streams can be interrupted if needed
 - **Resource Efficiency**: No need to buffer entire responses
 
-## Evaluation Criteria Alignment
 
-### 1. Architectural Clarity (40%)
+### 1. Architecture
 
 **Pipeline Design**: Clear DAG with deterministic flow
 ```
@@ -49,7 +48,7 @@ Hunter → Enricher → Contactor → Scorer → Writer → Compliance → Seque
 
 **Clean Interfaces**: Every agent follows `run(state) -> state` pattern
 
-### 2. Technical Execution (30%)
+### 2. Technical Execution
 
 **Streaming Implementation**: 
 - Ollama `/api/generate` with `stream: true`
@@ -66,8 +65,6 @@ Hunter → Enricher → Contactor → Scorer → Writer → Compliance → Seque
 - Proper RPC communication
 - Typed client wrappers
 
-### 3. Creativity & Foresight (20%)
-
 **Compliance Framework**: Regional policy toggles, suppression ledger, footer enforcement
 
 **Handoff Packets**: Complete context transfer for human takeover
@@ -75,8 +72,6 @@ Hunter → Enricher → Contactor → Scorer → Writer → Compliance → Seque
 **Calendar Integration**: ICS generation for meeting scheduling
 
 **Progressive Enrichment**: TTL-based fact expiry, confidence scoring
-
-### 4. Communication (10%)
 
 **Comprehensive Documentation**:
 - README with setup, usage, and examples
