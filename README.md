@@ -156,11 +156,12 @@ curl -X POST http://localhost:8000/reset
 Embed demo video directly in GitHub README. You can store it either at the repo root (`Lucidya_test.webm`) or under `assets/Lucidya_test.webm`. The player below includes both paths and will use whichever exists.
 
 <video controls width="100%">
-  <source src="assets/Lucidya_test.webm" type="video/webm" />
-  <source src="Lucidya_test.webm" type="video/webm" />
+  <!-- Use ?raw=1 so GitHub serves the actual file content -->
+  <source src="assets/Lucidya_test.webm?raw=1" type="video/webm" />
+  <source src="Lucidya_test.webm?raw=1" type="video/webm" />
   Your browser does not support the video tag.
-  <a href="assets/Lucidya_test.webm">Download the demo video</a>
-  <a href="Lucidya_test.webm">Alternate link</a>
+  <a href="assets/Lucidya_test.webm?raw=1">Download the demo video</a>
+  <a href="Lucidya_test.webm?raw=1">Alternate link</a>
   <!-- Optional MP4 for broader compatibility -->
   <!-- <source src="assets/Lucidya_test.mp4" type="video/mp4" /> -->
 </video>
