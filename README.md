@@ -153,6 +153,8 @@ curl -X POST http://localhost:8000/reset
 
 ## 🎥 Demo
 
+The demo video is included in this repository as `Lucidya_test.webm`.
+
 <video controls width="100%">
   <source src="assets/Lucidya_test.webm?raw=1" type="video/webm" />
   <source src="Lucidya_test.webm?raw=1" type="video/webm" />
